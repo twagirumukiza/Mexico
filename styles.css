@@ -20,14 +20,16 @@
 }
 
 body.theme-light {
-  --black: #f8f8f8;
+  --black: #f5f5f0;
   --dark: #ffffff;
-  --dark-2: #f0f0f0;
+  --dark-2: #f0efe8;
   --text: #1a1a1a;
-  --text-muted: #555;
-  --gray: #666;
+  --text-muted: #444;
+  --gray: #555;
   --light: #1a1a1a;
-  --white: #0d0d0d;
+  --white: #111;
+  --yellow: #b8941f;          /* or plus sombre pour contraste sur fond clair */
+  --yellow-dark: #8f7218;
 }
 
 * {
@@ -448,19 +450,21 @@ body.theme-light .hero h1 {
 
 .marker-label {
   position: absolute;
-  top: -28px;
+  top: -30px;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(13, 13, 13, 0.9);
-  color: var(--yellow);
-  font-size: 0.7rem;
-  font-weight: 600;
-  padding: 0.2rem 0.5rem;
+  background: #111;
+  color: #f7c948;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.25rem 0.55rem;
   border-radius: 4px;
   white-space: nowrap;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s;
+  border: 1px solid #f7c948;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.35);
 }
 
 .marker:hover .marker-label {
@@ -712,6 +716,94 @@ body.theme-light .hero h1 {
 .footer-note {
   margin-top: 0.4rem;
   font-size: 0.8rem !important;
+}
+
+
+/* ========== LIGHT THEME — contraste type Pluton ========== */
+body.theme-light .header {
+  background: rgba(255, 255, 255, 0.97);
+  border-bottom-color: rgba(184, 148, 31, 0.25);
+}
+
+body.theme-light .logo,
+body.theme-light .nav-desktop a:hover,
+body.theme-light .section-title,
+body.theme-light .stat-num,
+body.theme-light .timeline-date,
+body.theme-light .story-date,
+body.theme-light .signature,
+body.theme-light .footer strong,
+body.theme-light .marker-label,
+body.theme-light .popup-content h3,
+body.theme-light .story-body h4,
+body.theme-light .menu-stages p {
+  color: #8f7218; /* or sombre lisible */
+}
+
+body.theme-light .hero {
+  background: linear-gradient(135deg, #f5f5f0 0%, #ebe8d8 50%, #e0d9b8 100%);
+}
+
+body.theme-light .hero h1 {
+  color: #1a1a1a;
+}
+
+body.theme-light .hero-subtitle {
+  color: #8f7218;
+}
+
+body.theme-light .btn-primary {
+  background: #c9a227;
+  color: #111;
+  border-color: #c9a227;
+}
+
+body.theme-light .btn-primary:hover {
+  background: transparent;
+  color: #8f7218;
+  border-color: #8f7218;
+}
+
+body.theme-light .lang-btn.active,
+body.theme-light .lang-btn:hover {
+  background: #c9a227;
+  color: #111;
+}
+
+body.theme-light .marker-dot {
+  background: #c9a227;
+  border-color: #fff;
+  box-shadow: 0 0 0 4px rgba(201, 162, 39, 0.4);
+}
+
+body.theme-light .story-header {
+  background: linear-gradient(90deg, rgba(201, 162, 39, 0.2), transparent);
+}
+
+body.theme-light .story-date {
+  background: #c9a227;
+  color: #111;
+}
+
+body.theme-light .timeline {
+  border-left-color: #c9a227;
+}
+
+body.theme-light .timeline-item::before {
+  background: #c9a227;
+  border-color: #f5f5f0;
+}
+
+body.theme-light .map-wrapper {
+  border-color: rgba(184, 148, 31, 0.4);
+}
+
+body.theme-light .popup-content {
+  border-color: #c9a227;
+}
+
+body.theme-light .mobile-menu {
+  border-left-color: #c9a227;
 }
 
 /* ========== RESPONSIVE ========== */
