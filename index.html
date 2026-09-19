@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carnet de Voyage — Mexique, Guatemala & Belize | twagirumukiza</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="theme-dark">
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="#home" class="logo">
+        <span class="logo-icon">◆</span>
+        <span class="logo-text">TWAGIRUMUKIZA</span>
+      </a>
+
+      <nav class="nav-desktop">
+        <a href="#home" data-i18n="nav.home">Accueil</a>
+        <a href="#map" data-i18n="nav.map">Carte</a>
+        <a href="#itinerary" data-i18n="nav.itinerary">Itinéraire</a>
+        <a href="#stories" data-i18n="nav.stories">Récits</a>
+        <a href="#about" data-i18n="nav.about">À propos</a>
+      </nav>
+
+      <div class="header-controls">
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="fr">FR</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="es">ES</button>
+        </div>
+        <div class="font-controls">
+          <button id="font-minus" title="Diminuer">A−</button>
+          <button id="font-plus" title="Augmenter">A+</button>
+        </div>
+        <button id="theme-toggle" class="theme-btn" title="Thème">
+          <span class="theme-icon">☾</span>
+        </button>
+        <button id="burger" class="burger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" class="mobile-menu">
+    <div class="mobile-menu-inner">
+      <a href="#home" data-i18n="nav.home">Accueil</a>
+      <a href="#map" data-i18n="nav.map">Carte interactive</a>
+      <a href="#itinerary" data-i18n="nav.itinerary">Itinéraire</a>
+      <div class="menu-stages">
+        <p data-i18n="nav.stages">Étapes du voyage</p>
+        <a href="#mexico-city">Mexico City</a>
+        <a href="#teotihuacan">Teotihuacán</a>
+        <a href="#oaxaca">Oaxaca</a>
+        <a href="#monte-alban">Monte Albán</a>
+        <a href="#teotitlan">Teotitlán del Valle</a>
+        <a href="#puerto-escondido">Puerto Escondido</a>
+        <a href="#mazunte">Mazunte</a>
+        <a href="#san-cristobal">San Cristóbal</a>
+        <a href="#palenque">Palenque</a>
+        <a href="#flores-tikal">Flores & Tikal</a>
+        <a href="#belize">Belize</a>
+        <a href="#tulum">Tulum</a>
+        <a href="#cancun">Cancún</a>
+      </div>
+      <a href="#about" data-i18n="nav.about">À propos</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-subtitle" data-i18n="hero.subtitle">Août – Septembre 2010</p>
+      <h1 data-i18n="hero.title">Carnet de Voyage<br>Mexique • Guatemala • Belize</h1>
+      <p class="hero-desc" data-i18n="hero.desc">2 620 km d'aventures, de rencontres et de merveilles à travers l'Amérique centrale.</p>
+      <a href="#map" class="btn-primary" data-i18n="hero.cta">Explorer la carte</a>
+    </div>
+    <div class="scroll-indicator">↓</div>
+  </section>
+
+  <!-- INTERACTIVE MAP -->
+  <section id="map" class="map-section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="map.title">Carte Interactive</h2>
+      <p class="section-desc" data-i18n="map.desc">Cliquez sur une ville visitée pour découvrir le récit de cette étape.</p>
+
+      <div class="map-wrapper">
+        <img src="map-mexico.jpg" alt="Carte du Mexique" class="map-img" id="map-img">
+        <!-- Clickable markers -->
+        <button class="marker" style="left:48%; top:48%;" data-city="mexico-city" data-name="Mexico City">
+          <span class="marker-dot"></span>
+          <span class="marker-label">Mexico City</span>
+        </button>
+        <button class="marker" style="left:50%; top:42%;" data-city="teotihuacan" data-name="Teotihuacán">
+          <span class="marker-dot"></span>
+          <span class="marker-label">Teotihuacán</span>
+        </button>
+        <button class="marker" style="left:52%; top:62%;" data-city="oaxaca" data-name="Oaxaca">
+          <span class="marker-dot"></span>
+          <span class="marker-label">Oaxaca</span>
+        </button>
+        <button class="marker" style="left:51%; top:60%;" data-city="monte-alban" data-name="Monte Albán">
+          <span class="marker-dot"></span>
+          <span class="marker-label">Monte Albán</span>
+        </button>
+        <button class="marker" style="left:53%; top:61%;" data-city="teotitlan" data-name="Teotitlán">
+          <span class="marker-dot"></span>
+          <span class="marker-label">Teotitlán</span>
+        </button>
+        <button class="marker" style="left:48%; top:72%;" data-city="puerto-escondido" data-name="Puerto Escondido">
+          <span class="marker-dot"></span>
+          <span class="marker-label">P. Escondido</span>
+        </button>
+        <button class="marker" style="left:49%; top:74%;" data-city="mazunte" data-name="Mazunte">
+          <span class="marker-dot"></span>
+          <span class="marker-label">Mazunte</span>
+        </button>
+        <button class="marker" style="left:62%; top:68%;" data-city="san-cristobal" data-name="San Cristóbal">
+          <span class="marker-dot"></span>
+          <span class="marker-label">San Cristóbal</span>
+        </button>
+        <button class="marker" style="left:66%; top:62%;" data-city="palenque" data-name="Palenque">
+          <span class="marker-dot"></span>
+          <span class="marker-label">Palenque</span>
+        </button>
+        <button class="marker" style="left:72%; top:55%;" data-city="flores-tikal" data-name="Flores / Tikal">
+          <span class="marker-dot"></span>
+          <span class="marker-label">Tikal</span>
+        </button>
+        <button class="marker" style="left:78%; top:52%;" data-city="belize" data-name="Belize">
+          <span class="marker-dot"></span>
+          <span class="marker-label">Belize</span>
+        </button>
+        <button class="marker" style="left:82%; top:48%;" data-city="tulum" data-name="Tulum">
+          <span class="marker-dot"></span>
+          <span class="marker-label">Tulum</span>
+        </button>
+        <button class="marker" style="left:85%; top:42%;" data-city="cancun" data-name="Cancún">
+          <span class="marker-dot"></span>
+          <span class="marker-label">Cancún</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- POPUP -->
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <button class="popup-close">×</button>
+      <h3 id="popup-title"></h3>
+      <p id="popup-preview"></p>
+      <a href="#" id="popup-link" class="btn-primary" data-i18n="popup.see">Voir le récit complet</a>
+    </div>
+  </div>
+
+  <!-- ITINERARY SUMMARY -->
+  <section id="itinerary" class="itinerary-section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="itinerary.title">Itinéraire</h2>
+      <div class="itinerary-stats">
+        <div class="stat">
+          <span class="stat-num">2620</span>
+          <span class="stat-label" data-i18n="itinerary.km">Kilomètres</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">20</span>
+          <span class="stat-label" data-i18n="itinerary.days">Jours</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">3</span>
+          <span class="stat-label" data-i18n="itinerary.countries">Pays</span>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item" data-city="mexico-city">
+          <div class="timeline-date">14–17 août</div>
+          <div class="timeline-content">
+            <h4>Mexico City</h4>
+            <p data-i18n="itin.mexico">Arrivée, Teotihuacán, Coyoacán, Chapultepec, métro & nuit Condesa</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-city="oaxaca">
+          <div class="timeline-date">18–21 août</div>
+          <div class="timeline-content">
+            <h4>Oaxaca → Côte Pacifique</h4>
+            <p data-i18n="itin.oaxaca">Oaxaca, Monte Albán, Teotitlán, Puerto Escondido, Mazunte</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-city="san-cristobal">
+          <div class="timeline-date">23–26 août</div>
+          <div class="timeline-content">
+            <h4>Chiapas</h4>
+            <p data-i18n="itin.chiapas">San Cristóbal, Agua Azul, Mizol-Ha, checkpoint zapatiste, Palenque</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-city="flores-tikal">
+          <div class="timeline-date">27–28 août</div>
+          <div class="timeline-content">
+            <h4>Guatemala</h4>
+            <p data-i18n="itin.guatemala">Traversée río Suchiate, Flores, Tikal</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-city="belize">
+          <div class="timeline-date">30 août</div>
+          <div class="timeline-content">
+            <h4>Belize</h4>
+            <p data-i18n="itin.belize">Passage frontière & route vers le Yucatán</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-city="tulum">
+          <div class="timeline-date">30 août – 2 sept.</div>
+          <div class="timeline-content">
+            <h4>Yucatán</h4>
+            <p data-i18n="itin.yucatan">Tulum, ruines, plages & Cancún</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORIES -->
+  <section id="stories" class="stories-section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="stories.title">Récits du voyage</h2>
+
+      <!-- MEXICO CITY -->
+      <article id="mexico-city" class="story-card">
+        <div class="story-header">
+          <span class="story-date">14 – 17 août 2010</span>
+          <h3>Mexico City — District Fédéral</h3>
+        </div>
+        <div class="story-body">
+          <h4 data-i18n="mc.arrival">Arrivée</h4>
+          <p data-i18n="mc.p1">Après un long vol, nous avons enfin atterri à Mexico City, le cœur palpitant du Mexique. L'air chargé de la mégapole nous a frappés dès la sortie de l'aéroport.</p>
+          <h4 data-i18n="mc.housing">Hébergement</h4>
+          <p data-i18n="mc.p2">Nous avons été accueillis par Claire et Cynthia, qui nous ont généreusement offert l'hospitalité dans leur appartement.</p>
+          <h4 data-i18n="mc.outing">Sortie</h4>
+          <p data-i18n="mc.p3">Pour notre première soirée, nous nous sommes rendus à la Cantina de los Remedios, un endroit emblématique où nous avons dégusté des plats traditionnels mexicains dans une ambiance conviviale.</p>
+          <h4>15 août — Teotihuacán</h4>
+          <p data-i18n="mc.p4">Ce jour-là, nous nous sommes aventurés dans l'ancienne cité de Teotihuacán. Marcher sur l'Avenue des Morts et gravir la Pyramide du Soleil ont été des moments inoubliables. Nous avons parcouru 40 km depuis Mexico City.</p>
+          <h4 data-i18n="mc.slums">Bidonvilles</h4>
+          <p data-i18n="mc.p5">Plus tard, nous avons visité certains bidonvilles de Mexico. Cette expérience contrastante a révélé une autre facette de la ville, marquée par les difficultés mais aussi par la résilience des habitants.</p>
+          <h4>16 août — Coyoacán, Centro Histórico & San Ángel</h4>
+          <p data-i18n="mc.p6">Début de journée à Coyoacán : Plaza Hidalgo, Jardin del Centenario, Museo Frida Kahlo. Puis Plaza Garibaldi pour les mariachi, la Catedral Metropolitana, le quartier bohème de San Ángel et El Ángel de la Independencia.</p>
+          <h4>17 août — Chapultepec & Condesa</h4>
+          <p data-i18n="mc.p7">Matinée au Bosque de Chapultepec : Monumento de los Niños Héroes et Museo Nacional de Antropología. Exploration du métro (wagons réservés aux femmes). Soirée au Bar Pride dans le quartier de Condesa.</p>
+        </div>
+      </article>
+
+      <!-- TEOTIHUACAN -->
+      <article id="teotihuacan" class="story-card">
+        <div class="story-header">
+          <span class="story-date">15 août 2010</span>
+          <h3>Teotihuacán</h3>
+        </div>
+        <div class="story-body">
+          <p data-i18n="teo.p1">L'un des sites archéologiques les plus impressionnants du Mexique. Marcher sur l'Avenue des Morts et gravir la Pyramide du Soleil restent des moments gravés à jamais. 40 km de Mexico City.</p>
+        </div>
+      </article>
+
+      <!-- OAXACA -->
+      <article id="oaxaca" class="story-card">
+        <div class="story-header">
+          <span class="story-date">18 août 2010</span>
+          <h3>Oaxaca de Juárez</h3>
+        </div>
+        <div class="story-body">
+          <h4 data-i18n="oax.two-worlds">Deux mondes se découvrent</h4>
+          <p data-i18n="oax.p1">Sur la route sinueuse d'Oaxaca, notre voyage nous conduit dans un petit village indien. Je réalise que je suis le seul noir dans cet endroit reculé. Peu à peu, un groupe d'Indiens se forme autour de moi, leurs yeux brillants d'une curiosité respectueuse. Ils me parlent dans leur langue, une mélodie douce mais incompréhensible. Je réponds en espagnol, mais ils ne comprennent pas.</p>
+          <p data-i18n="oax.p2">Ils commencent à me toucher doucement, avec une sorte de vénération. Leurs mains effleurent mon bras, ma main. Aucune violence, seulement une curiosité pure, presque enfantine. L'un d'eux parvient enfin à dire en espagnol : « C'est la première fois que nous voyons un homme noir. » Ce moment, si simple et pourtant si intense, devient magique. Une véritable communion entre deux mondes.</p>
+          <h4 data-i18n="oax.housing">Logement</h4>
+          <p data-i18n="oax.p3">Casa Paulina, une demeure au charme authentique.</p>
+          <h4 data-i18n="oax.visits">Visites</h4>
+          <p data-i18n="oax.p4">Zócalo, Catedral de Nuestra Señora de la Asunción, Iglesia de Santo Domingo, Palacio de Gobierno, Mercado Juárez, Mercado de Artesanías et la coopérative MARO (300 femmes artisans).</p>
+        </div>
+      </article>
+
+      <!-- MONTE ALBAN -->
+      <article id="monte-alban" class="story-card">
+        <div class="story-header">
+          <span class="story-date">19 août 2010</span>
+          <h3>Monte Albán</h3>
+        </div>
+        <div class="story-body">
+          <p data-i18n="ma.p1">L'un des sites archéologiques les plus emblématiques de la Méso-Amérique. Perchée sur une colline surplombant la vallée d'Oaxaca, cette ancienne cité zapotèque nous a transportés des siècles en arrière. Pyramides, terrasses et temples majestueux, érodés par le temps mais toujours impressionnants.</p>
+        </div>
+      </article>
+
+      <!-- TEOTITLAN -->
+      <article id="teotitlan" class="story-card">
+        <div class="story-header">
+          <span class="story-date">20 août 2010</span>
+          <h3>Teotitlán del Valle</h3>
+        </div>
+        <div class="story-body">
+          <p data-i18n="teo2.p1">Village célèbre pour ses tisserands. Chaque maison est un atelier où les mains expertes transforment la laine brute en tapis colorés selon des méthodes ancestrales. Visite du mercado de artesanías.</p>
+        </div>
+      </article>
+
+      <!-- PUERTO ESCONDIDO -->
+      <article id="puerto-escondido" class="story-card">
+        <div class="story-header">
+          <span class="story-date">20 – 21 août 2010</span>
+          <h3>Puerto Escondido</h3>
+        </div>
+        <div class="story-body">
+          <h4 data-i18n="pe.housing">Logement</h4>
+          <p data-i18n="pe.p1">Mayflower Hotel, charmant établissement près des plages.</p>
+          <h4 data-i18n="pe.pacific">Un océan Pacifique pas si pacifique…</h4>
+          <p data-i18n="pe.p2">À Playa Carrizalillo, sous un soleil éclatant, nous nous installons sur des transats près de la buvette. Les vagues chatouillent nos pieds. Je me dis naïvement : « S'ils ont mis les sièges ici, c'est que les vagues ne risquent pas de nous atteindre. »</p>
+          <p data-i18n="pe.p3">À peine ai-je porté mon verre aux lèvres qu'une vague immense déferle. Tout est emporté : bancs, transats… et nous. Trempés jusqu'aux os, nous regagnons le rivage. Le tenancier reste impassible, récupère les sièges flottants et nous demande calmement si nous voulons « reprendre la même chose ».</p>
+          <p data-i18n="pe.p4">Le lendemain, à Playa Principal, pour passer de l'autre côté, on nous indique d'escalader un rocher de 3 m. À peine descendu du premier rocher, une vague de plus de 4 m m'engloutit, me projette contre les rochers. Instinct de survie : je m'agrippe. Quand la mer se retire, je sors épuisé. Personne n'a bougé. « Ce Pacifique n'a de pacifique que le nom… Je crois bien qu'il ne m'aime pas. »</p>
+        </div>
+      </article>
+
+      <!-- MAZUNTE -->
+      <article id="mazunte" class="story-card">
+        <div class="story-header">
+          <span class="story-date">21 août 2010</span>
+          <h3>Mazunte — Playa de las Tortugas</h3>
+        </div>
+        <div class="story-body">
+          <p data-i18n="maz.p1">Sous le ciel étoilé, nous avons été témoins du majestueux rituel des tortues géantes venant déposer leurs œufs dans le sable doré.</p>
+        </div>
+      </article>
+
+      <!-- SAN CRISTOBAL -->
+      <article id="san-cristobal" class="story-card">
+        <div class="story-header">
+          <span class="story-date">23 – 26 août 2010</span>
+          <h3>San Cristóbal de las Casas (Chiapas)</h3>
+        </div>
+        <div class="story-body">
+          <h4 data-i18n="sc.housing">Logement</h4>
+          <p data-i18n="sc.p1">Planet Hostel et Casa Carmelita.</p>
+          <h4 data-i18n="sc.visits">Visites</h4>
+          <p data-i18n="sc.p2">Museo de las Culturas Populares de Chiapas, Casa del Jade, Mercado Municipal, Templo y Ex-Convento de Santo Domingo, Museo del Ámbar de Chiapas. Restaurants : Margarita, Todo Natural, Casa de Chiapas.</p>
+          <h4>26 août — Cascades & Zapatistes</h4>
+          <p data-i18n="sc.p3">Cascades d'Agua Azul (eaux turquoise) et de Mizol-Ha. Sur la route de Palenque, barrage zapatiste : hommes cagoulés et armés demandent un « impôt révolutionnaire ». Fermes mais respectueux. Nous payons et continuons, conscients d'avoir touché l'âme résistante du Chiapas.</p>
+        </div>
+      </article>
+
+      <!-- PALENQUE -->
+      <article id="palenque" class="story-card">
+        <div class="story-header">
+          <span class="story-date">26 août 2010</span>
+          <h3>Palenque — La majestueuse</h3>
+        </div>
+        <div class="story-body">
+          <p data-i18n="pal.p1">Un des plus beaux endroits du monde que j'aie jamais visités. Joyau niché au cœur de la jungle, lumière magique, temples majestueux.</p>
+          <h4 data-i18n="pal.mosquitoes">L'attaque des moustiques</h4>
+          <p data-i18n="pal.p2">Erreur : short et manches courtes. Les moustiques de Palenque sont indifférents à la crème. Pourtant la soif de découverte l'emporte.</p>
+          <h4 data-i18n="pal.monkeys">Des singes malicieux</h4>
+          <p data-i18n="pal.p3">Des singes m'attirent par leurs cris… puis me pissent dessus en riant comme des humains. « Méfiez-vous, c'est leur spécialité », me confie un guide.</p>
+          <h4 data-i18n="pal.view">Un panorama sublime</h4>
+          <p data-i18n="pal.p4">Escalade d'une pyramide via une échelle vertigineuse. Au sommet, la vallée s'étend à perte de vue. Vertige partagé avec d'autres visiteurs en larmes. Descente magique.</p>
+          <h4 data-i18n="pal.labyrinth">Le labyrinthe de vert</h4>
+          <p data-i18n="pal.p5">Perdus dans la jungle dense. Crépuscule, peur d'un jaguar… puis les gardes forestiers nous retrouvent. Soulagement immense. Palenque restera gravé à jamais.</p>
+          <p data-i18n="pal.housing"><strong>Logement :</strong> Hostel Catedral.</p>
+        </div>
+      </article>
+
+      <!-- FLORES & TIKAL -->
+      <article id="flores-tikal" class="story-card">
+        <div class="story-header">
+          <span class="story-date">27 – 28 août 2010</span>
+          <h3>Guatemala — Flores & Tikal</h3>
+        </div>
+        <div class="story-body">
+          <h4 data-i18n="gua.crossing">Traversée du río Suchiate</h4>
+          <p data-i18n="gua.p1">Des Indiens nous proposent de franchir la frontière en barque. 30 minutes de clapotis. Accueillis par l'armée guatémaltèque, contrôle dans un camp militaire, taxes et visas. Camion militaire puis bus jusqu'à Flores, île sur le lac Petén Itzá.</p>
+          <h4>28 août — Tikal</h4>
+          <p data-i18n="gua.p2">L'un des plus grands sites mayas. Pyramides surgissant de la canopée. Chants d'oiseaux et cris de singes hurleurs. Vue à couper le souffle depuis le sommet. Connexion profonde avec une civilisation qui continue de parler à travers la forêt.</p>
+        </div>
+      </article>
+
+      <!-- BELIZE -->
+      <article id="belize" class="story-card">
+        <div class="story-header">
+          <span class="story-date">30 août 2010</span>
+          <h3>Belize</h3>
+        </div>
+        <div class="story-body">
+          <p data-i18n="bel.p1">Sans visa et pas encore citoyen français, je redoute un refoulement. Tour de passe-passe : je me fais passer pour un fonctionnaire français en mission. Traitement de faveur. Le Belize se révèle un joyau de paysages à couper le souffle.</p>
+        </div>
+      </article>
+
+      <!-- TULUM -->
+      <article id="tulum" class="story-card">
+        <div class="story-header">
+          <span class="story-date">30 – 31 août 2010</span>
+          <h3>Tulum</h3>
+        </div>
+        <div class="story-body">
+          <p data-i18n="tul.p1">Logement : Lobo Inn Hostel. Exploration de la ville, ruines de Tulum surplombant la mer des Caraïbes, farniente à Playa Zazil-Kin et balades à vélo.</p>
+        </div>
+      </article>
+
+      <!-- CANCUN -->
+      <article id="cancun" class="story-card">
+        <div class="story-header">
+          <span class="story-date">2 septembre 2010</span>
+          <h3>Cancún</h3>
+        </div>
+        <div class="story-body">
+          <p data-i18n="can.p1">Un seul mot d'ordre : farniente. Au Q Bay Hotel, le directeur, émerveillé par notre origine parisienne, nous offre une suite all-inclusive au prix d'une chambre standard. Hôtel quasi vide hors saison. Piscine et plage pour nous seuls. Un véritable palace déserté.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="about.title">À propos</h2>
+      <p class="about-text" data-i18n="about.text">
+        Ce carnet de voyage retrace l'aventure de 2 620 km à travers le Mexique, le Guatemala et le Belize en août-septembre 2010. Rencontres humaines, sites archéologiques majestueux, plages turbulentes et jungle mystérieuse… autant de souvenirs gravés à jamais.
+      </p>
+      <p class="signature">— twagirumukiza</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2010–2026 • Carnet de Voyage Mexique • <strong>twagirumukiza</strong></p>
+      <p class="footer-note" data-i18n="footer.note">Site réalisé avec passion</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
