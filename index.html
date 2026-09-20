@@ -15,7 +15,7 @@
     <div class="header-inner">
       <a href="#home" class="logo">
         <span class="logo-icon">◆</span>
-        <span class="logo-text">MEXICO</span>
+        <span class="logo-text">TWAGIRUMUKIZA</span>
       </a>
 
       <nav class="nav-desktop">
@@ -423,6 +423,34 @@
       </article>
     </div>
   </section>
+
+  <!-- POSTER / CARTE SOUVENIR -->
+  <section id="poster" class="poster-section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="poster.title">Le voyage en un coup d'œil</h2>
+      <p class="section-desc" data-i18n="poster.desc">Toutes les étapes, les distances et les photos sur une seule carte. Cliquez pour l'agrandir et zoomer.</p>
+      <button type="button" class="poster-thumb" id="poster-open" aria-label="Agrandir l'image">
+        <img src="carnet-poster.jpg" alt="Carte récapitulative du voyage : étapes, distances et photos" loading="lazy">
+        <span class="poster-badge">🔍 <span data-i18n="poster.zoom">Cliquer pour zoomer</span></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- POSTER VIEWER (plein écran, zoomable) -->
+  <div id="poster-viewer" class="poster-viewer hidden" role="dialog" aria-modal="true">
+    <div class="pv-bar">
+      <span class="pv-hint" data-i18n="poster.hint">Molette ou boutons pour zoomer • glisser pour se déplacer • double-clic pour zoomer</span>
+      <div class="pv-btns">
+        <button type="button" id="pv-out" aria-label="Zoom −">−</button>
+        <button type="button" id="pv-in" aria-label="Zoom +">+</button>
+        <button type="button" id="pv-fit" aria-label="Ajuster">⤢</button>
+        <button type="button" id="pv-close" aria-label="Fermer">×</button>
+      </div>
+    </div>
+    <div class="pv-stage" id="pv-stage">
+      <img id="pv-img" src="carnet-poster.jpg" alt="" draggable="false">
+    </div>
+  </div>
 
   <!-- ABOUT -->
   <section id="about" class="about-section">

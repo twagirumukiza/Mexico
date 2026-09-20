@@ -918,3 +918,115 @@ body.theme-light .mobile-menu {
     font-size: 2rem;
   }
 }
+
+
+/* ========== POSTER (carte récapitulative zoomable) ========== */
+.poster-section {
+  padding: 5rem 0;
+  background: var(--dark);
+}
+
+.poster-thumb {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 2px solid rgba(247, 201, 72, 0.3);
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: zoom-in;
+  background: none;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.poster-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease;
+}
+
+.poster-thumb:hover img { transform: scale(1.015); }
+
+.poster-badge {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  background: rgba(13, 13, 13, 0.85);
+  color: var(--yellow);
+  border: 1px solid var(--yellow);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+}
+
+body.theme-light .poster-thumb { border-color: rgba(184, 148, 31, 0.4); }
+body.theme-light .poster-badge { background: rgba(255, 255, 255, 0.92); color: #8f7218; border-color: #c9a227; }
+
+.poster-viewer {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  flex-direction: column;
+}
+
+.poster-viewer.hidden { display: none; }
+
+.pv-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.6rem 1rem;
+  background: #111;
+  border-bottom: 1px solid rgba(247, 201, 72, 0.3);
+}
+
+.pv-hint {
+  color: #bbb;
+  font-size: 0.75rem;
+}
+
+.pv-btns { display: flex; gap: 0.4rem; }
+
+.pv-btns button {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid rgba(247, 201, 72, 0.5);
+  background: #1a1a1a;
+  color: #f7c948;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.pv-btns button:hover { background: #f7c948; color: #111; }
+
+.pv-stage {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  cursor: grab;
+  touch-action: none;
+}
+
+.pv-stage.dragging { cursor: grabbing; }
+
+.pv-stage img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: 0 0;
+  max-width: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+@media (max-width: 600px) {
+  .pv-hint { display: none; }
+  .pv-bar { justify-content: flex-end; }
+}

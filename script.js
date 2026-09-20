@@ -19,6 +19,10 @@ const translations = {
     "map.desc": "Cliquez sur une ville visitée pour découvrir le récit de cette étape.",
     "popup.see": "Voir le récit complet",
     "map.hint": "Ctrl + molette ou boutons + / − pour zoomer • glisser pour se déplacer",
+    "poster.title": "Le voyage en un coup d'œil",
+    "poster.desc": "Toutes les étapes, les distances et les photos sur une seule carte. Cliquez pour l'agrandir et zoomer.",
+    "poster.zoom": "Cliquer pour zoomer",
+    "poster.hint": "Molette ou boutons pour zoomer • glisser pour se déplacer • double-clic pour zoomer",
     "itinerary.title": "Itinéraire",
     "itinerary.km": "Kilomètres",
     "itinerary.days": "Jours",
@@ -100,6 +104,10 @@ const translations = {
     "map.desc": "Click on a city you visited to discover the story of that stage.",
     "popup.see": "Read the full story",
     "map.hint": "Ctrl + scroll or the + / − buttons to zoom • drag to move",
+    "poster.title": "The trip at a glance",
+    "poster.desc": "All the stops, distances and photos on a single map. Click to enlarge and zoom.",
+    "poster.zoom": "Click to zoom",
+    "poster.hint": "Scroll or buttons to zoom • drag to move • double-click to zoom",
     "itinerary.title": "Itinerary",
     "itinerary.km": "Kilometers",
     "itinerary.days": "Days",
@@ -180,6 +188,10 @@ const translations = {
     "map.desc": "Haz clic en una ciudad visitada para descubrir el relato de esa etapa.",
     "popup.see": "Ver el relato completo",
     "map.hint": "Ctrl + rueda o botones + / − para hacer zoom • arrastra para moverte",
+    "poster.title": "El viaje de un vistazo",
+    "poster.desc": "Todas las etapas, distancias y fotos en un solo mapa. Haz clic para ampliar y hacer zoom.",
+    "poster.zoom": "Clic para hacer zoom",
+    "poster.hint": "Rueda o botones para zoom • arrastra para moverte • doble clic para ampliar",
     "itinerary.title": "Itinerario",
     "itinerary.km": "Kilómetros",
     "itinerary.days": "Días",
@@ -307,6 +319,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initBurger();
   initMap();
   initMapZoom();
+  initPosterViewer();
   initTimeline();
   initSmoothScroll();
 });
@@ -534,4 +547,119 @@ function initMapZoom() {
       apply(true);
     });
   });
+}
+
+
+// Visionneuse plein écran zoomable pour l'image récapitulative
+function initPosterViewer() {
+  const viewer = document.getElementById('poster-viewer');
+  const stage = document.getElementById('pv-stage');
+  const img = document.getElementById('pv-img');
+  const openBtn = document.getElementById('poster-open');
+  if (!viewer || !openBtn) return;
+
+  let z = 1, tx = 0, ty = 0, fit = 1;
+  const MAX = 6;
+
+  function natural() { return { w: img.naturalWidth || 1, h: img.naturalHeight || 1 }; }
+
+  function apply() {
+    const n = natural();
+    const W = stage.clientWidth, H = stage.clientHeight;
+    const sw = n.w * fit * z, sh = n.h * fit * z;
+    tx = sw <= W ? (W - sw) / 2 : Math.min(0, Math.max(W - sw, tx));
+    ty = sh <= H ? (H - sh) / 2 : Math.min(0, Math.max(H - sh, ty));
+    img.style.width = n.w + 'px';
+    img.style.height = n.h + 'px';
+    img.style.transform = 'translate(' + tx + 'px,' + ty + 'px) scale(' + (fit * z) + ')';
+  }
+
+  function fitToScreen() {
+    const n = natural();
+    fit = Math.min(stage.clientWidth / n.w, stage.clientHeight / n.h);
+    z = 1; tx = 0; ty = 0;
+    apply();
+  }
+
+  function zoomAt(factor, cx, cy) {
+    const nz = Math.max(1, Math.min(MAX, z * factor));
+    const k = nz / z;
+    tx = cx - (cx - tx) * k;
+    ty = cy - (cy - ty) * k;
+    z = nz;
+    apply();
+  }
+
+  function open() {
+    viewer.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+    if (img.complete && img.naturalWidth) fitToScreen();
+    else img.addEventListener('load', fitToScreen, { once: true });
+  }
+  function close() {
+    viewer.classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+
+  openBtn.addEventListener('click', open);
+  document.getElementById('pv-close').addEventListener('click', close);
+  document.getElementById('pv-fit').addEventListener('click', fitToScreen);
+  document.getElementById('pv-in').addEventListener('click', () => zoomAt(1.6, stage.clientWidth / 2, stage.clientHeight / 2));
+  document.getElementById('pv-out').addEventListener('click', () => zoomAt(1 / 1.6, stage.clientWidth / 2, stage.clientHeight / 2));
+  document.addEventListener('keydown', e => {
+    if (viewer.classList.contains('hidden')) return;
+    if (e.key === 'Escape') close();
+    if (e.key === '+' || e.key === '=') document.getElementById('pv-in').click();
+    if (e.key === '-') document.getElementById('pv-out').click();
+  });
+
+  stage.addEventListener('wheel', e => {
+    e.preventDefault();
+    const r = stage.getBoundingClientRect();
+    zoomAt(e.deltaY < 0 ? 1.25 : 0.8, e.clientX - r.left, e.clientY - r.top);
+  }, { passive: false });
+
+  stage.addEventListener('dblclick', e => {
+    const r = stage.getBoundingClientRect();
+    if (z > 1.5) fitToScreen(); else zoomAt(2.5, e.clientX - r.left, e.clientY - r.top);
+  });
+
+  // Pointeurs : glisser (1 doigt) et pincer pour zoomer (2 doigts)
+  const pts = new Map();
+  let last = null, pinch = 0;
+  stage.addEventListener('pointerdown', e => {
+    pts.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    stage.setPointerCapture(e.pointerId);
+    last = { x: e.clientX, y: e.clientY };
+    if (pts.size === 2) {
+      const [a, b] = [...pts.values()];
+      pinch = Math.hypot(a.x - b.x, a.y - b.y);
+    }
+    stage.classList.add('dragging');
+  });
+  stage.addEventListener('pointermove', e => {
+    if (!pts.has(e.pointerId)) return;
+    pts.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    if (pts.size === 2) {
+      const [a, b] = [...pts.values()];
+      const d = Math.hypot(a.x - b.x, a.y - b.y);
+      const r = stage.getBoundingClientRect();
+      if (pinch) zoomAt(d / pinch, (a.x + b.x) / 2 - r.left, (a.y + b.y) / 2 - r.top);
+      pinch = d;
+    } else if (pts.size === 1 && last) {
+      tx += e.clientX - last.x;
+      ty += e.clientY - last.y;
+      apply();
+    }
+    last = { x: e.clientX, y: e.clientY };
+  });
+  const up = e => {
+    pts.delete(e.pointerId);
+    pinch = 0;
+    last = pts.size === 1 ? [...pts.values()][0] : null;
+    if (!pts.size) stage.classList.remove('dragging');
+  };
+  stage.addEventListener('pointerup', up);
+  stage.addEventListener('pointercancel', up);
+  window.addEventListener('resize', () => { if (!viewer.classList.contains('hidden')) fitToScreen(); });
 }
