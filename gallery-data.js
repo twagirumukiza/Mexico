@@ -145,6 +145,31 @@ const GALLERIES = {
         alt: "Grand escalier de la Pyramide du Soleil, foule et vendeurs sur l'esplanade",
         caption: { fr: '', en: '', es: '' } }
     ]
+  },
+
+  'oaxaca': {
+    title: { fr: "Photos d'Oaxaca", en: 'Oaxaca photos', es: 'Fotos de Oaxaca' },
+    photos: [
+      { src: 'photos/oaxaca/01.jpg', thumb: 'photos/oaxaca/thumbs/01.jpg',
+        alt: "Jardin tropical vu depuis une galerie couverte, avec des tables",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/oaxaca/02.jpg', thumb: 'photos/oaxaca/thumbs/02.jpg',
+        alt: "Intérieur baroque d'une église : voûte sculptée et dorée, nef et retable au fond",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/oaxaca/03.jpg', thumb: 'photos/oaxaca/thumbs/03.jpg',
+        alt: "Retable doré du chœur d'une église, avec des bouquets de fleurs blanches",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/oaxaca/04.jpg', thumb: 'photos/oaxaca/thumbs/04.jpg',
+        alt: "Rue pavée du centre historique d'Oaxaca, façades colorées et montagnes dans la brume",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/oaxaca/05.jpg', thumb: 'photos/oaxaca/thumbs/05.jpg',
+        alt: "Promenade sur le trottoir d'une rue du centre historique d'Oaxaca",
+        caption: { fr: '', en: '', es: '' } }
+    ]
   }
 
 };
