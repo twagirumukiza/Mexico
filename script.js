@@ -18,6 +18,7 @@ const translations = {
     "map.title": "Carte Interactive",
     "map.desc": "Cliquez sur une ville visitée pour découvrir le récit de cette étape.",
     "popup.see": "Voir le récit complet",
+    "map.hint": "Ctrl + molette ou boutons + / − pour zoomer • glisser pour se déplacer",
     "itinerary.title": "Itinéraire",
     "itinerary.km": "Kilomètres",
     "itinerary.days": "Jours",
@@ -98,6 +99,7 @@ const translations = {
     "map.title": "Interactive Map",
     "map.desc": "Click on a city you visited to discover the story of that stage.",
     "popup.see": "Read the full story",
+    "map.hint": "Ctrl + scroll or the + / − buttons to zoom • drag to move",
     "itinerary.title": "Itinerary",
     "itinerary.km": "Kilometers",
     "itinerary.days": "Days",
@@ -177,6 +179,7 @@ const translations = {
     "map.title": "Mapa Interactivo",
     "map.desc": "Haz clic en una ciudad visitada para descubrir el relato de esa etapa.",
     "popup.see": "Ver el relato completo",
+    "map.hint": "Ctrl + rueda o botones + / − para hacer zoom • arrastra para moverte",
     "itinerary.title": "Itinerario",
     "itinerary.km": "Kilómetros",
     "itinerary.days": "Días",
@@ -303,6 +306,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initFontSize();
   initBurger();
   initMap();
+  initMapZoom();
   initTimeline();
   initSmoothScroll();
 });
@@ -455,6 +459,79 @@ function initSmoothScroll() {
         e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
+    });
+  });
+}
+
+
+// Zoom / déplacement de la carte
+function initMapZoom() {
+  const wrapper = document.getElementById('map-wrapper');
+  const stage = document.getElementById('map-stage');
+  if (!wrapper || !stage) return;
+  const view = { z: 1, tx: 0, ty: 0 };
+
+  function apply(animate) {
+    const W = wrapper.clientWidth, H = wrapper.clientHeight;
+    view.z = Math.max(1, Math.min(5, view.z));
+    view.tx = Math.min(0, Math.max(W - W * view.z, view.tx));
+    view.ty = Math.min(0, Math.max(H - H * view.z, view.ty));
+    stage.classList.toggle('anim', !!animate);
+    stage.style.setProperty('--z', view.z);
+    stage.style.transform = 'translate(' + view.tx + 'px,' + view.ty + 'px) scale(' + view.z + ')';
+    wrapper.classList.toggle('zoomed', view.z >= 2);
+  }
+
+  function zoomAt(factor, cx, cy, animate) {
+    const nz = Math.max(1, Math.min(5, view.z * factor));
+    const k = nz / view.z;
+    view.tx = cx - (cx - view.tx) * k;
+    view.ty = cy - (cy - view.ty) * k;
+    view.z = nz;
+    apply(animate);
+  }
+
+  // Les boutons zooment vers la zone du voyage (sud-est de la carte)
+  const cx = () => wrapper.clientWidth * 0.72, cy = () => wrapper.clientHeight * 0.82;
+  document.getElementById('zoom-in').addEventListener('click', () => zoomAt(1.7, cx(), cy(), true));
+  document.getElementById('zoom-out').addEventListener('click', () => zoomAt(1 / 1.7, cx(), cy(), true));
+  document.getElementById('zoom-reset').addEventListener('click', () => { view.z = 1; view.tx = 0; view.ty = 0; apply(true); });
+
+  wrapper.addEventListener('wheel', e => {
+    if (!(e.ctrlKey || e.metaKey)) return;
+    e.preventDefault();
+    const r = wrapper.getBoundingClientRect();
+    zoomAt(e.deltaY < 0 ? 1.25 : 0.8, e.clientX - r.left, e.clientY - r.top, false);
+  }, { passive: false });
+
+  let drag = null;
+  wrapper.addEventListener('pointerdown', e => {
+    if (e.target.closest('.marker, .map-controls')) return;
+    drag = { x: e.clientX, y: e.clientY, tx: view.tx, ty: view.ty };
+    wrapper.setPointerCapture(e.pointerId);
+  });
+  wrapper.addEventListener('pointermove', e => {
+    if (!drag || view.z === 1) return;
+    wrapper.classList.add('dragging');
+    view.tx = drag.tx + (e.clientX - drag.x);
+    view.ty = drag.ty + (e.clientY - drag.y);
+    apply(false);
+  });
+  const end = () => { drag = null; wrapper.classList.remove('dragging'); };
+  wrapper.addEventListener('pointerup', end);
+  wrapper.addEventListener('pointercancel', end);
+  window.addEventListener('resize', () => apply(false));
+
+  // Clic sur un marqueur : zoom sur l'étape (les étapes proches deviennent visibles)
+  document.querySelectorAll('.marker').forEach(marker => {
+    marker.addEventListener('click', () => {
+      const W = wrapper.clientWidth, H = wrapper.clientHeight;
+      const px = parseFloat(marker.style.left) / 100 * W;
+      const py = parseFloat(marker.style.top) / 100 * H;
+      view.z = marker.classList.contains('minor') ? 4 : Math.max(view.z, 3);
+      view.tx = W / 2 - px * view.z;
+      view.ty = H / 2 - py * view.z;
+      apply(true);
     });
   });
 }
