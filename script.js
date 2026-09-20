@@ -36,6 +36,8 @@ const translations = {
     "gallery.teotihuacan.btn": "Voir les photos de Teotihuacán",
     "gallery.oaxaca.btn": "Voir les photos d'Oaxaca",
     "gallery.montealban.btn": "Voir les photos de Monte Albán",
+    "t3.btn": "Explorer Teotihuacán en 3D",
+    "t3.sub": "Carte 3D interactive avec les points-photos",
     "gallery.hint": "← → naviguer • molette ou pincer pour zoomer • double-clic • Échap pour fermer",
     "itinerary.title": "Itinéraire",
     "itinerary.km": "Kilomètres",
@@ -135,6 +137,8 @@ const translations = {
     "gallery.teotihuacan.btn": "See the Teotihuacán photos",
     "gallery.oaxaca.btn": "See the Oaxaca photos",
     "gallery.montealban.btn": "See the Monte Albán photos",
+    "t3.btn": "Explore Teotihuacán in 3D",
+    "t3.sub": "Interactive 3D map with photo points",
     "gallery.hint": "← → navigate • scroll or pinch to zoom • double-click • Esc to close",
     "itinerary.title": "Itinerary",
     "itinerary.km": "Kilometers",
@@ -233,6 +237,8 @@ const translations = {
     "gallery.teotihuacan.btn": "Ver las fotos de Teotihuacán",
     "gallery.oaxaca.btn": "Ver las fotos de Oaxaca",
     "gallery.montealban.btn": "Ver las fotos de Monte Albán",
+    "t3.btn": "Explorar Teotihuacán en 3D",
+    "t3.sub": "Mapa 3D interactivo con puntos de fotos",
     "gallery.hint": "← → navegar • rueda o pellizcar para zoom • doble clic • Esc para cerrar",
     "itinerary.title": "Itinerario",
     "itinerary.km": "Kilómetros",
@@ -363,6 +369,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMapZoom();
   initPosterViewer();
   initGalleries();
+  initTeo3D();
   initTimeline();
   initSmoothScroll();
 });
@@ -947,7 +954,7 @@ function initGalleries() {
 
   function go(d) { if (photos.length > 1) show(idx + d); }
 
-  function open(id, trigger) {
+  function open(id, trigger, startIndex) {
     const g = GALLERIES[id];
     if (!g || !g.photos.length) return;
     if (!root) build();
@@ -971,7 +978,7 @@ function initGalleries() {
     isOpen = true;
     document.body.style.overflow = 'hidden';
     try { history.pushState({ gv: 1 }, ''); pushed = true; } catch (e) { pushed = false; }
-    show(0);
+    show(startIndex > 0 ? startIndex : 0);
     root.querySelector('.gv-close').focus({ preventScroll: true });
   }
 
@@ -979,13 +986,32 @@ function initGalleries() {
     if (!isOpen) return;
     isOpen = false;
     root.classList.remove('open');
-    document.body.style.overflow = '';
+    document.body.style.overflow = document.body.classList.contains('t3-open') ? 'hidden' : '';
     loadToken++;
     if (pushed && !fromPop) { pushed = false; try { history.back(); } catch (e) {} }
     if (lastFocus && lastFocus.focus) lastFocus.focus({ preventScroll: true });
   }
 
+  window.openGallery = open;
+
   document.querySelectorAll('[data-gallery]').forEach(btn => {
     btn.addEventListener('click', () => open(btn.dataset.gallery, btn));
+  });
+}
+
+
+// ===== Carte 3D de Teotihuacán (chargée à la demande) =====
+function initTeo3D() {
+  document.querySelectorAll('[data-open3d]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const go = () => window.Teo3D && window.Teo3D.open(btn);
+      if (window.Teo3D) { go(); return; }
+      btn.classList.add('loading');
+      const s = document.createElement('script');
+      s.src = 'teotihuacan-3d.js';
+      s.onload = () => { btn.classList.remove('loading'); go(); };
+      s.onerror = () => btn.classList.remove('loading');
+      document.head.appendChild(s);
+    });
   });
 }

@@ -16,6 +16,19 @@
        es: "La Torre Latinoamericana vista desde la Alameda Central."
      }
 
+
+   POSITION SUR LA MAQUETTE 3D (galerie 'teotihuacan' uniquement) :
+     pos: { u, v, dir }   (h est facultatif : altitude de l'œil en mètres)
+       u   = mètres le long de l'Avenue des Morts (0 = Pyramide de la Lune,
+             valeurs négatives vers le sud / la Ciudadela)
+       v   = mètres à l'est (+) ou à l'ouest (−) de l'axe de l'avenue
+       dir = direction de la prise de vue en degrés, 0 = nord de l'avenue,
+             90 = est, 180 = sud, 270 = ouest (facultatif)
+     Les appareils photo de ces clichés n'enregistraient pas de GPS : ces positions
+     sont ESTIMÉES d'après le contenu des photos. Pour les corriger facilement,
+     ouvrez le site avec  ?editer3d  à la fin de l'adresse, cliquez sur le sol de la
+     maquette 3D pour replacer chaque photo, puis copiez le code généré ici.
+
    Pour ajouter une photo : copiez-collez un bloc { ... }, changez src/thumb.
    Pour changer l'ordre : déplacez les blocs.
    Pour une nouvelle galerie (ex. 'oaxaca') : ajoutez une clé dans GALERIES
@@ -91,58 +104,72 @@ const GALLERIES = {
     photos: [
       { src: 'photos/teotihuacan/01.jpg', thumb: 'photos/teotihuacan/thumbs/01.jpg',
         alt: "Sur l'Avenue des Morts, bras ouverts, avec les pyramides de la Lune et du Soleil au loin",
+        pos: { u: -790, v: 0, dir: 0 },   // sur l'Avenue des Morts, face au nord
         caption: { fr: '', en: '', es: '' } },
 
       { src: 'photos/teotihuacan/02.jpg', thumb: 'photos/teotihuacan/thumbs/02.jpg',
         alt: "Voladores tout en haut du grand mât, avant le vol",
+        pos: { u: -430, v: -260 },   // voladores (parking à l'ouest de la Pyramide du Soleil)
         caption: { fr: '', en: '', es: '' } },
 
       { src: 'photos/teotihuacan/03.jpg', thumb: 'photos/teotihuacan/thumbs/03.jpg',
         alt: "Un volador grimpant au mât par les échelons de corde",
+        pos: { u: -445, v: -248 },   // voladores
         caption: { fr: '', en: '', es: '' } },
 
       { src: 'photos/teotihuacan/04.jpg', thumb: 'photos/teotihuacan/thumbs/04.jpg',
         alt: "Voladores suspendus la tête en bas, tournant autour du mât",
+        pos: { u: -418, v: -270 },   // voladores
         caption: { fr: '', en: '', es: '' } },
 
       { src: 'photos/teotihuacan/05.jpg', thumb: 'photos/teotihuacan/thumbs/05.jpg',
         alt: "Pyramide du Soleil vue de face depuis l'esplanade",
+        pos: { u: -400, v: 55, dir: 90 },   // place du Soleil, face à la pyramide
         caption: { fr: '', en: '', es: '' } },
 
       { src: 'photos/teotihuacan/06.jpg', thumb: 'photos/teotihuacan/thumbs/06.jpg',
         alt: "Escalier de la Pyramide du Soleil, couvert de visiteurs",
+        pos: { u: -405, v: 75, dir: 90 },   // place du Soleil
         caption: { fr: '', en: '', es: '' } },
 
       { src: 'photos/teotihuacan/07.jpg', thumb: 'photos/teotihuacan/thumbs/07.jpg',
         alt: "Portrait au pied de la Pyramide du Soleil",
+        pos: { u: -415, v: 92, dir: 90 },   // pied de l'escalier
         caption: { fr: '', en: '', es: '' } },
 
       { src: 'photos/teotihuacan/08.jpg', thumb: 'photos/teotihuacan/thumbs/08.jpg',
         alt: "Gros plan devant la Pyramide du Soleil",
+        pos: { u: -422, v: 96, dir: 90 },   // pied de l'escalier
         caption: { fr: '', en: '', es: '' } },
 
       { src: 'photos/teotihuacan/09.jpg', thumb: 'photos/teotihuacan/thumbs/09.jpg',
         alt: "Vue depuis le sommet sur l'Avenue des Morts et la grande place",
+        pos: { u: -430, v: 206, dir: 270 },   // sommet de la Pyramide du Soleil, face à l'ouest
         caption: { fr: '', en: '', es: '' } },
 
       { src: 'photos/teotihuacan/10.jpg', thumb: 'photos/teotihuacan/thumbs/10.jpg',
         alt: "Vue plongeante depuis la pyramide sur la place et les visiteurs",
+        pos: { u: -430, v: 170, dir: 270 },   // haut de l'escalier, face à l'ouest
         caption: { fr: '', en: '', es: '' } },
 
       { src: 'photos/teotihuacan/11.jpg', thumb: 'photos/teotihuacan/thumbs/11.jpg',
         alt: "Accroché à la paroi de pierre de la pyramide",
+        pos: { u: -548, v: 250, dir: 0 },   // base de la face sud
         caption: { fr: '', en: '', es: '' } },
 
       { src: 'photos/teotihuacan/12.jpg', thumb: 'photos/teotihuacan/thumbs/12.jpg',
         alt: "Arête de la Pyramide du Soleil sous les nuages, visiteurs au sommet",
+        pos: { u: -590, v: 70, dir: 45 },   // angle sud-ouest
         caption: { fr: '', en: '', es: '' } },
 
       { src: 'photos/teotihuacan/13.jpg', thumb: 'photos/teotihuacan/thumbs/13.jpg',
         alt: "Au pied de la Pyramide du Soleil, chapeau à la main",
+        pos: { u: -598, v: 80, dir: 45 },   // angle sud-ouest
         caption: { fr: '', en: '', es: '' } },
 
       { src: 'photos/teotihuacan/14.jpg', thumb: 'photos/teotihuacan/thumbs/14.jpg',
         alt: "Grand escalier de la Pyramide du Soleil, foule et vendeurs sur l'esplanade",
+        pos: { u: -445, v: 84, dir: 90 },   // devant le grand escalier
         caption: { fr: '', en: '', es: '' } }
     ]
   },
