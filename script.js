@@ -23,6 +23,17 @@ const translations = {
     "poster.desc": "Toutes les étapes, les distances et les photos sur une seule carte. Cliquez pour l'agrandir et zoomer.",
     "poster.zoom": "Cliquer pour zoomer",
     "poster.hint": "Molette ou boutons pour zoomer • glisser pour se déplacer • double-clic pour zoomer",
+    "gallery.mexico.btn": "Voir les photos de Mexico City",
+    "gallery.photos": "photos",
+    "gallery.close": "Fermer",
+    "gallery.prev": "Photo précédente",
+    "gallery.next": "Photo suivante",
+    "gallery.zoomin": "Zoom avant",
+    "gallery.zoomout": "Zoom arrière",
+    "gallery.fit": "Taille d'origine (ajuster)",
+    "gallery.photo": "Photo",
+    "gallery.mexico.title": "Photos de Mexico City",
+    "gallery.hint": "← → naviguer • molette ou pincer pour zoomer • double-clic • Échap pour fermer",
     "itinerary.title": "Itinéraire",
     "itinerary.km": "Kilomètres",
     "itinerary.days": "Jours",
@@ -108,6 +119,17 @@ const translations = {
     "poster.desc": "All the stops, distances and photos on a single map. Click to enlarge and zoom.",
     "poster.zoom": "Click to zoom",
     "poster.hint": "Scroll or buttons to zoom • drag to move • double-click to zoom",
+    "gallery.mexico.btn": "See the Mexico City photos",
+    "gallery.photos": "photos",
+    "gallery.close": "Close",
+    "gallery.prev": "Previous photo",
+    "gallery.next": "Next photo",
+    "gallery.zoomin": "Zoom in",
+    "gallery.zoomout": "Zoom out",
+    "gallery.fit": "Fit to screen",
+    "gallery.photo": "Photo",
+    "gallery.mexico.title": "Mexico City photos",
+    "gallery.hint": "← → navigate • scroll or pinch to zoom • double-click • Esc to close",
     "itinerary.title": "Itinerary",
     "itinerary.km": "Kilometers",
     "itinerary.days": "Days",
@@ -192,6 +214,17 @@ const translations = {
     "poster.desc": "Todas las etapas, distancias y fotos en un solo mapa. Haz clic para ampliar y hacer zoom.",
     "poster.zoom": "Clic para hacer zoom",
     "poster.hint": "Rueda o botones para zoom • arrastra para moverte • doble clic para ampliar",
+    "gallery.mexico.btn": "Ver las fotos de Ciudad de México",
+    "gallery.photos": "fotos",
+    "gallery.close": "Cerrar",
+    "gallery.prev": "Foto anterior",
+    "gallery.next": "Foto siguiente",
+    "gallery.zoomin": "Acercar",
+    "gallery.zoomout": "Alejar",
+    "gallery.fit": "Ajustar a la pantalla",
+    "gallery.photo": "Foto",
+    "gallery.mexico.title": "Fotos de Ciudad de México",
+    "gallery.hint": "← → navegar • rueda o pellizcar para zoom • doble clic • Esc para cerrar",
     "itinerary.title": "Itinerario",
     "itinerary.km": "Kilómetros",
     "itinerary.days": "Días",
@@ -320,6 +353,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMap();
   initMapZoom();
   initPosterViewer();
+  initGalleries();
   initTimeline();
   initSmoothScroll();
 });
@@ -662,4 +696,286 @@ function initPosterViewer() {
   stage.addEventListener('pointerup', up);
   stage.addEventListener('pointercancel', up);
   window.addEventListener('resize', () => { if (!viewer.classList.contains('hidden')) fitToScreen(); });
+}
+
+
+// ===== Galeries photos (diaporama plein écran, zoomable) =====
+// Les photos et leurs commentaires se règlent dans gallery-data.js
+function initGalleries() {
+  if (typeof GALLERIES === 'undefined') return;
+  const T = k => (translations[currentLang] && translations[currentLang][k]) || translations.fr[k] || '';
+
+  document.querySelectorAll('[data-gallery-count]').forEach(el => {
+    const btn = el.closest('[data-gallery]');
+    const g = btn && GALLERIES[btn.dataset.gallery];
+    if (g) el.textContent = g.photos.length;
+  });
+
+  let root = null, stage, img, spinner, counter, capBox, capText, thumbs, zoomLbl, bIn, bOut;
+  let photos = [], idx = 0, z = 1, fit = 1, tx = 0, ty = 0, swipeDx = 0;
+  let loadToken = 0, lastFocus = null, isOpen = false, pushed = false;
+  const MAX = 6;
+
+  function build() {
+    root = document.createElement('div');
+    root.className = 'gv';
+    root.setAttribute('role', 'dialog');
+    root.setAttribute('aria-modal', 'true');
+    root.innerHTML =
+      '<div class="gv-top">' +
+        '<div class="gv-count"><span class="gv-cur">1</span><span class="gv-sep">/</span><span class="gv-total"></span></div>' +
+        '<div class="gv-hint"></div>' +
+        '<div class="gv-tools">' +
+          '<span class="gv-zoomlbl">×1</span>' +
+          '<button type="button" class="gv-out">−</button>' +
+          '<button type="button" class="gv-in">+</button>' +
+          '<button type="button" class="gv-fit">⤢</button>' +
+          '<button type="button" class="gv-close">×</button>' +
+        '</div>' +
+      '</div>' +
+      '<div class="gv-stage">' +
+        '<div class="gv-spinner"></div>' +
+        '<img class="gv-img" alt="" draggable="false">' +
+        '<button type="button" class="gv-nav gv-prev">‹</button>' +
+        '<button type="button" class="gv-nav gv-next">›</button>' +
+      '</div>' +
+      '<div class="gv-caption"><p></p></div>' +
+      '<div class="gv-thumbs"></div>';
+    document.body.appendChild(root);
+
+    stage = root.querySelector('.gv-stage');
+    img = root.querySelector('.gv-img');
+    spinner = root.querySelector('.gv-spinner');
+    counter = root.querySelector('.gv-cur');
+    capBox = root.querySelector('.gv-caption');
+    capText = capBox.querySelector('p');
+    thumbs = root.querySelector('.gv-thumbs');
+    zoomLbl = root.querySelector('.gv-zoomlbl');
+    bIn = root.querySelector('.gv-in');
+    bOut = root.querySelector('.gv-out');
+
+    root.querySelector('.gv-close').addEventListener('click', () => close());
+    root.querySelector('.gv-prev').addEventListener('click', () => go(-1));
+    root.querySelector('.gv-next').addEventListener('click', () => go(1));
+    bIn.addEventListener('click', () => zoomAt(1.6, stage.clientWidth / 2, stage.clientHeight / 2, true));
+    bOut.addEventListener('click', () => zoomAt(1 / 1.6, stage.clientWidth / 2, stage.clientHeight / 2, true));
+    root.querySelector('.gv-fit').addEventListener('click', () => fitImage(true));
+
+    // Molette : zoom autour du curseur
+    stage.addEventListener('wheel', e => {
+      e.preventDefault();
+      const r = stage.getBoundingClientRect();
+      zoomAt(e.deltaY < 0 ? 1.2 : 1 / 1.2, e.clientX - r.left, e.clientY - r.top, false);
+    }, { passive: false });
+
+    // Pointeurs : déplacement, glissé pour changer de photo, pincement, double-tap
+    const pts = new Map();
+    let last = null, pinch = 0, downAt = 0, moved = 0, lastTap = 0, lastTapPos = null;
+    stage.addEventListener('pointerdown', e => {
+      if (e.target.closest('.gv-nav')) return;
+      pts.set(e.pointerId, { x: e.clientX, y: e.clientY });
+      stage.setPointerCapture(e.pointerId);
+      last = { x: e.clientX, y: e.clientY };
+      downAt = Date.now(); moved = 0; swipeDx = 0;
+      if (pts.size === 2) {
+        const [a, b] = [...pts.values()];
+        pinch = Math.hypot(a.x - b.x, a.y - b.y);
+      }
+      img.classList.remove('anim');
+      stage.classList.add('dragging');
+    });
+    stage.addEventListener('pointermove', e => {
+      if (!pts.has(e.pointerId)) return;
+      pts.set(e.pointerId, { x: e.clientX, y: e.clientY });
+      if (pts.size === 2) {
+        const [a, b] = [...pts.values()];
+        const d = Math.hypot(a.x - b.x, a.y - b.y);
+        const r = stage.getBoundingClientRect();
+        if (pinch) zoomAt(d / pinch, (a.x + b.x) / 2 - r.left, (a.y + b.y) / 2 - r.top, false);
+        pinch = d; moved += 10;
+      } else if (pts.size === 1 && last) {
+        const dx = e.clientX - last.x, dy = e.clientY - last.y;
+        moved += Math.abs(dx) + Math.abs(dy);
+        if (z > 1.02) { tx += dx; ty += dy; }
+        else { swipeDx += dx; }
+        render(false);
+      }
+      last = { x: e.clientX, y: e.clientY };
+    });
+    const up = e => {
+      if (!pts.has(e.pointerId)) return;
+      const wasSingle = pts.size === 1;
+      pts.delete(e.pointerId);
+      pinch = 0;
+      last = pts.size === 1 ? [...pts.values()][0] : null;
+      if (pts.size) return;
+      stage.classList.remove('dragging');
+      if (!wasSingle) return;
+      const r = stage.getBoundingClientRect();
+      const px = e.clientX - r.left, py = e.clientY - r.top;
+      // Glissé horizontal pour changer de photo (uniquement non zoomé)
+      if (z <= 1.02 && Math.abs(swipeDx) > 70 && photos.length > 1) {
+        const d = swipeDx < 0 ? 1 : -1; swipeDx = 0; go(d); return;
+      }
+      swipeDx = 0;
+      // Double clic / double tap : zoom ou retour
+      if (moved < 8 && Date.now() - downAt < 350) {
+        const now = Date.now();
+        if (now - lastTap < 320 && lastTapPos && Math.hypot(px - lastTapPos.x, py - lastTapPos.y) < 40) {
+          if (z > 1.3) fitImage(true); else zoomAt(2.6, px, py, true);
+          lastTap = 0;
+        } else { lastTap = now; lastTapPos = { x: px, y: py }; }
+      }
+      render(true);
+    };
+    stage.addEventListener('pointerup', up);
+    stage.addEventListener('pointercancel', up);
+
+    document.addEventListener('keydown', e => {
+      if (!isOpen) return;
+      if (e.key === 'Escape') { e.preventDefault(); close(); }
+      else if (e.key === 'ArrowRight') { go(1); }
+      else if (e.key === 'ArrowLeft') { go(-1); }
+      else if (e.key === '+' || e.key === '=') { bIn.click(); }
+      else if (e.key === '-') { bOut.click(); }
+      else if (e.key === '0') { fitImage(true); }
+      else if (e.key === 'Home') { show(0); }
+      else if (e.key === 'End') { show(photos.length - 1); }
+      else if (e.key === 'Tab') { // piège à focus
+        const f = [...root.querySelectorAll('button')].filter(b => b.offsetParent !== null);
+        if (!f.length) return;
+        const first = f[0], lastEl = f[f.length - 1];
+        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); lastEl.focus(); }
+        else if (!e.shiftKey && document.activeElement === lastEl) { e.preventDefault(); first.focus(); }
+      }
+    });
+
+    window.addEventListener('resize', () => { if (isOpen) fitImage(false); });
+    window.addEventListener('popstate', () => { if (isOpen) { pushed = false; close(true); } });
+  }
+
+  function labels() {
+    root.setAttribute('aria-label', T('gallery.mexico.title'));
+    root.querySelector('.gv-close').setAttribute('aria-label', T('gallery.close'));
+    root.querySelector('.gv-close').title = T('gallery.close');
+    root.querySelector('.gv-prev').setAttribute('aria-label', T('gallery.prev'));
+    root.querySelector('.gv-next').setAttribute('aria-label', T('gallery.next'));
+    bIn.setAttribute('aria-label', T('gallery.zoomin')); bIn.title = T('gallery.zoomin');
+    bOut.setAttribute('aria-label', T('gallery.zoomout')); bOut.title = T('gallery.zoomout');
+    root.querySelector('.gv-fit').setAttribute('aria-label', T('gallery.fit'));
+    root.querySelector('.gv-fit').title = T('gallery.fit');
+    root.querySelector('.gv-hint').textContent = T('gallery.hint');
+  }
+
+  function render(animate) {
+    const nw = img.naturalWidth || 1, nh = img.naturalHeight || 1;
+    const W = stage.clientWidth, H = stage.clientHeight;
+    const sw = nw * fit * z, sh = nh * fit * z;
+    tx = sw <= W ? (W - sw) / 2 : Math.min(0, Math.max(W - sw, tx));
+    ty = sh <= H ? (H - sh) / 2 : Math.min(0, Math.max(H - sh, ty));
+    img.classList.toggle('anim', !!animate);
+    img.style.width = nw + 'px';
+    img.style.height = nh + 'px';
+    img.style.transform = 'translate(' + (tx + (z <= 1.02 ? swipeDx : 0)) + 'px,' + ty + 'px) scale(' + (fit * z) + ')';
+    zoomLbl.textContent = '×' + z.toFixed(1);
+    bIn.disabled = z >= MAX - 0.01;
+    bOut.disabled = z <= 1.01;
+    stage.classList.toggle('zoomed', z > 1.02);
+  }
+
+  function fitImage(animate) {
+    const nw = img.naturalWidth || 1, nh = img.naturalHeight || 1;
+    fit = Math.min(stage.clientWidth / nw, stage.clientHeight / nh);
+    z = 1; tx = 0; ty = 0; swipeDx = 0;
+    render(animate);
+  }
+
+  function zoomAt(f, cx, cy, animate) {
+    const nz = Math.max(1, Math.min(MAX, z * f));
+    const k = nz / z;
+    tx = cx - (cx - tx) * k;
+    ty = cy - (cy - ty) * k;
+    z = nz;
+    render(animate);
+  }
+
+  function caption(p) {
+    const c = p.caption || {};
+    return (c[currentLang] || c.fr || '').trim();
+  }
+
+  function show(i) {
+    idx = (i + photos.length) % photos.length;
+    const p = photos[idx];
+    const token = ++loadToken;
+    counter.textContent = idx + 1;
+    const txt = caption(p);
+    capText.textContent = txt;
+    capBox.classList.toggle('has-text', !!txt);
+    thumbs.querySelectorAll('.gv-thumb').forEach((b, n) => {
+      b.classList.toggle('active', n === idx);
+      b.setAttribute('aria-current', n === idx ? 'true' : 'false');
+    });
+    const active = thumbs.children[idx];
+    if (active) thumbs.scrollTo({ left: active.offsetLeft - thumbs.clientWidth / 2 + active.clientWidth / 2, behavior: 'smooth' });
+
+    img.classList.add('loading');
+    spinner.classList.add('on');
+    img.alt = p.alt || '';
+    img.onload = () => {
+      if (token !== loadToken) return;
+      spinner.classList.remove('on');
+      fitImage(false);
+      requestAnimationFrame(() => img.classList.remove('loading'));
+    };
+    img.onerror = () => { if (token === loadToken) spinner.classList.remove('on'); };
+    img.src = p.src;
+    // Précharge les voisines
+    [idx + 1, idx - 1].forEach(n => { const q = photos[(n + photos.length) % photos.length]; if (q) new Image().src = q.src; });
+    root.querySelector('.gv-prev').style.display = root.querySelector('.gv-next').style.display = photos.length > 1 ? '' : 'none';
+  }
+
+  function go(d) { if (photos.length > 1) show(idx + d); }
+
+  function open(id, trigger) {
+    const g = GALLERIES[id];
+    if (!g || !g.photos.length) return;
+    if (!root) build();
+    photos = g.photos;
+    lastFocus = trigger || document.activeElement;
+    labels();
+    root.querySelector('.gv-total').textContent = photos.length;
+    thumbs.innerHTML = '';
+    photos.forEach((p, n) => {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'gv-thumb';
+      b.setAttribute('aria-label', T('gallery.photo') + ' ' + (n + 1));
+      const im = document.createElement('img');
+      im.src = p.thumb || p.src; im.alt = ''; im.loading = 'lazy'; im.draggable = false;
+      b.appendChild(im);
+      b.addEventListener('click', () => show(n));
+      thumbs.appendChild(b);
+    });
+    root.classList.add('open');
+    isOpen = true;
+    document.body.style.overflow = 'hidden';
+    try { history.pushState({ gv: 1 }, ''); pushed = true; } catch (e) { pushed = false; }
+    show(0);
+    root.querySelector('.gv-close').focus({ preventScroll: true });
+  }
+
+  function close(fromPop) {
+    if (!isOpen) return;
+    isOpen = false;
+    root.classList.remove('open');
+    document.body.style.overflow = '';
+    loadToken++;
+    if (pushed && !fromPop) { pushed = false; try { history.back(); } catch (e) {} }
+    if (lastFocus && lastFocus.focus) lastFocus.focus({ preventScroll: true });
+  }
+
+  document.querySelectorAll('[data-gallery]').forEach(btn => {
+    btn.addEventListener('click', () => open(btn.dataset.gallery, btn));
+  });
 }
