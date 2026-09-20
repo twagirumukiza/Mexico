@@ -170,6 +170,39 @@ const GALLERIES = {
         alt: "Promenade sur le trottoir d'une rue du centre historique d'Oaxaca",
         caption: { fr: '', en: '', es: '' } }
     ]
+  },
+
+  'monte-alban': {
+    title: { fr: 'Photos de Monte Albán', en: 'Monte Albán photos', es: 'Fotos de Monte Albán' },
+    photos: [
+      { src: 'photos/monte-alban/01.jpg', thumb: 'photos/monte-alban/thumbs/01.jpg',
+        alt: "Vue sur la vallée d'Oaxaca depuis la colline de Monte Albán",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/monte-alban/02.jpg', thumb: 'photos/monte-alban/thumbs/02.jpg',
+        alt: "Devant un escalier et une rampe de pierre du site archéologique",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/monte-alban/03.jpg', thumb: 'photos/monte-alban/thumbs/03.jpg',
+        alt: "Terrain de jeu de balle aux talus inclinés, sur l'herbe verte",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/monte-alban/04.jpg', thumb: 'photos/monte-alban/thumbs/04.jpg',
+        alt: "Plateforme de pierre et son grand escalier",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/monte-alban/05.jpg', thumb: 'photos/monte-alban/thumbs/05.jpg',
+        alt: "Bâtiment de pierre avec une porte à linteau, derrière l'esplanade",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/monte-alban/06.jpg', thumb: 'photos/monte-alban/thumbs/06.jpg',
+        alt: "Montée d'un escalier de pierre, avec l'esplanade et un tertre en contrebas",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/monte-alban/07.jpg', thumb: 'photos/monte-alban/thumbs/07.jpg',
+        alt: "Accroupi dans un étroit passage de pierre",
+        caption: { fr: '', en: '', es: '' } }
+    ]
   }
 
 };
