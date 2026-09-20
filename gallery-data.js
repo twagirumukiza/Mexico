@@ -26,6 +26,7 @@
 const GALLERIES = {
 
   'mexico-city': {
+    title: { fr: 'Photos de Mexico City', en: 'Mexico City photos', es: 'Fotos de Ciudad de México' },
     photos: [
       { src: 'photos/mexico-city/01.jpg', thumb: 'photos/mexico-city/thumbs/01.jpg',
         alt: "Façade de la Catedral Metropolitana",
@@ -81,6 +82,67 @@ const GALLERIES = {
 
       { src: 'photos/mexico-city/14.jpg', thumb: 'photos/mexico-city/thumbs/14.jpg',
         alt: "Promenade dans une allée arborée",
+        caption: { fr: '', en: '', es: '' } }
+    ]
+  },
+
+  'teotihuacan': {
+    title: { fr: 'Photos de Teotihuacán', en: 'Teotihuacán photos', es: 'Fotos de Teotihuacán' },
+    photos: [
+      { src: 'photos/teotihuacan/01.jpg', thumb: 'photos/teotihuacan/thumbs/01.jpg',
+        alt: "Sur l'Avenue des Morts, bras ouverts, avec les pyramides de la Lune et du Soleil au loin",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/teotihuacan/02.jpg', thumb: 'photos/teotihuacan/thumbs/02.jpg',
+        alt: "Voladores tout en haut du grand mât, avant le vol",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/teotihuacan/03.jpg', thumb: 'photos/teotihuacan/thumbs/03.jpg',
+        alt: "Un volador grimpant au mât par les échelons de corde",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/teotihuacan/04.jpg', thumb: 'photos/teotihuacan/thumbs/04.jpg',
+        alt: "Voladores suspendus la tête en bas, tournant autour du mât",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/teotihuacan/05.jpg', thumb: 'photos/teotihuacan/thumbs/05.jpg',
+        alt: "Pyramide du Soleil vue de face depuis l'esplanade",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/teotihuacan/06.jpg', thumb: 'photos/teotihuacan/thumbs/06.jpg',
+        alt: "Escalier de la Pyramide du Soleil, couvert de visiteurs",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/teotihuacan/07.jpg', thumb: 'photos/teotihuacan/thumbs/07.jpg',
+        alt: "Portrait au pied de la Pyramide du Soleil",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/teotihuacan/08.jpg', thumb: 'photos/teotihuacan/thumbs/08.jpg',
+        alt: "Gros plan devant la Pyramide du Soleil",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/teotihuacan/09.jpg', thumb: 'photos/teotihuacan/thumbs/09.jpg',
+        alt: "Vue depuis le sommet sur l'Avenue des Morts et la grande place",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/teotihuacan/10.jpg', thumb: 'photos/teotihuacan/thumbs/10.jpg',
+        alt: "Vue plongeante depuis la pyramide sur la place et les visiteurs",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/teotihuacan/11.jpg', thumb: 'photos/teotihuacan/thumbs/11.jpg',
+        alt: "Accroché à la paroi de pierre de la pyramide",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/teotihuacan/12.jpg', thumb: 'photos/teotihuacan/thumbs/12.jpg',
+        alt: "Arête de la Pyramide du Soleil sous les nuages, visiteurs au sommet",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/teotihuacan/13.jpg', thumb: 'photos/teotihuacan/thumbs/13.jpg',
+        alt: "Au pied de la Pyramide du Soleil, chapeau à la main",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/teotihuacan/14.jpg', thumb: 'photos/teotihuacan/thumbs/14.jpg',
+        alt: "Grand escalier de la Pyramide du Soleil, foule et vendeurs sur l'esplanade",
         caption: { fr: '', en: '', es: '' } }
     ]
   }

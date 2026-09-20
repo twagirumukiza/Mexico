@@ -33,6 +33,7 @@ const translations = {
     "gallery.fit": "Taille d'origine (ajuster)",
     "gallery.photo": "Photo",
     "gallery.mexico.title": "Photos de Mexico City",
+    "gallery.teotihuacan.btn": "Voir les photos de Teotihuacán",
     "gallery.hint": "← → naviguer • molette ou pincer pour zoomer • double-clic • Échap pour fermer",
     "itinerary.title": "Itinéraire",
     "itinerary.km": "Kilomètres",
@@ -129,6 +130,7 @@ const translations = {
     "gallery.fit": "Fit to screen",
     "gallery.photo": "Photo",
     "gallery.mexico.title": "Mexico City photos",
+    "gallery.teotihuacan.btn": "See the Teotihuacán photos",
     "gallery.hint": "← → navigate • scroll or pinch to zoom • double-click • Esc to close",
     "itinerary.title": "Itinerary",
     "itinerary.km": "Kilometers",
@@ -224,6 +226,7 @@ const translations = {
     "gallery.fit": "Ajustar a la pantalla",
     "gallery.photo": "Foto",
     "gallery.mexico.title": "Fotos de Ciudad de México",
+    "gallery.teotihuacan.btn": "Ver las fotos de Teotihuacán",
     "gallery.hint": "← → navegar • rueda o pellizcar para zoom • doble clic • Esc para cerrar",
     "itinerary.title": "Itinerario",
     "itinerary.km": "Kilómetros",
@@ -854,8 +857,9 @@ function initGalleries() {
     window.addEventListener('popstate', () => { if (isOpen) { pushed = false; close(true); } });
   }
 
-  function labels() {
-    root.setAttribute('aria-label', T('gallery.mexico.title'));
+  function labels(g) {
+    const gt = g && g.title ? (g.title[currentLang] || g.title.fr) : '';
+    root.setAttribute('aria-label', gt || T('gallery.mexico.title'));
     root.querySelector('.gv-close').setAttribute('aria-label', T('gallery.close'));
     root.querySelector('.gv-close').title = T('gallery.close');
     root.querySelector('.gv-prev').setAttribute('aria-label', T('gallery.prev'));
@@ -943,7 +947,7 @@ function initGalleries() {
     if (!root) build();
     photos = g.photos;
     lastFocus = trigger || document.activeElement;
-    labels();
+    labels(g);
     root.querySelector('.gv-total').textContent = photos.length;
     thumbs.innerHTML = '';
     photos.forEach((p, n) => {
