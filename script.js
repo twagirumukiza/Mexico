@@ -40,6 +40,13 @@ const translations = {
     "t3.montealban.btn": "Explorer Monte Albán en 3D",
     "gallery.teotitlan.btn": "Voir les photos de Teotitlán del Valle",
     "gallery.puertoescondido.btn": "Voir les photos de Puerto Escondido",
+    "gallery.mazunte.btn": "Voir les photos de Mazunte",
+    "gallery.sancristobal.btn": "Voir les photos de San Cristóbal",
+    "gallery.palenque.btn": "Voir les photos de Palenque",
+    "gallery.florestikal.btn": "Voir les photos de Flores & Tikal",
+    "gallery.belize.btn": "Voir les photos du Belize",
+    "gallery.tulum.btn": "Voir les photos de Tulum",
+    "gallery.cancun.btn": "Voir les photos de Cancún",
     "t3.sub": "Carte 3D interactive avec les points-photos",
     "gallery.hint": "← → naviguer • molette ou pincer pour zoomer • double-clic • Échap pour fermer",
     "itinerary.title": "Itinéraire",
@@ -144,6 +151,13 @@ const translations = {
     "t3.montealban.btn": "Explore Monte Albán in 3D",
     "gallery.teotitlan.btn": "See the Teotitlán del Valle photos",
     "gallery.puertoescondido.btn": "See the Puerto Escondido photos",
+    "gallery.mazunte.btn": "See the Mazunte photos",
+    "gallery.sancristobal.btn": "See the San Cristóbal photos",
+    "gallery.palenque.btn": "See the Palenque photos",
+    "gallery.florestikal.btn": "See the Flores & Tikal photos",
+    "gallery.belize.btn": "See the Belize photos",
+    "gallery.tulum.btn": "See the Tulum photos",
+    "gallery.cancun.btn": "See the Cancún photos",
     "t3.sub": "Interactive 3D map with photo points",
     "gallery.hint": "← → navigate • scroll or pinch to zoom • double-click • Esc to close",
     "itinerary.title": "Itinerary",
@@ -247,6 +261,13 @@ const translations = {
     "t3.montealban.btn": "Explorar Monte Albán en 3D",
     "gallery.teotitlan.btn": "Ver las fotos de Teotitlán del Valle",
     "gallery.puertoescondido.btn": "Ver las fotos de Puerto Escondido",
+    "gallery.mazunte.btn": "Ver las fotos de Mazunte",
+    "gallery.sancristobal.btn": "Ver las fotos de San Cristóbal",
+    "gallery.palenque.btn": "Ver las fotos de Palenque",
+    "gallery.florestikal.btn": "Ver las fotos de Flores y Tikal",
+    "gallery.belize.btn": "Ver las fotos de Belice",
+    "gallery.tulum.btn": "Ver las fotos de Tulum",
+    "gallery.cancun.btn": "Ver las fotos de Cancún",
     "t3.sub": "Mapa 3D interactivo con puntos de fotos",
     "gallery.hint": "← → navegar • rueda o pellizcar para zoom • doble clic • Esc para cerrar",
     "itinerary.title": "Itinerario",
@@ -1004,6 +1025,10 @@ function initGalleries() {
   window.openGallery = open;
 
   document.querySelectorAll('[data-gallery]').forEach(btn => {
+    // Masque le bouton tant que la galerie ne contient aucune photo
+    // (les galeries prêtes mais vides sont dans gallery-data.js, à remplir plus tard).
+    const g = GALLERIES[btn.dataset.gallery];
+    if (!g || !g.photos.length) { const cta = btn.closest('.gallery-cta'); if (cta) cta.style.display = 'none'; return; }
     btn.addEventListener('click', () => open(btn.dataset.gallery, btn));
   });
 }
