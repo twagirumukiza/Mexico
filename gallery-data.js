@@ -815,33 +815,33 @@ const GALLERIES = {
     // remplissez src/thumb/alt, et déplacez chaque bloc hors des commentaires
     // (dans le tableau photos: [...]) au fur et à mesure que vous ajoutez des images
     // dans photos/san-cristobal/ (grande version) et photos/san-cristobal/thumbs/ (miniature 220x160).
-      // { src: 'photos/san-cristobal/01.jpg', thumb: 'photos/san-cristobal/thumbs/01.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/san-cristobal/01.jpg', thumb: 'photos/san-cristobal/thumbs/01.jpg',
+        alt: "",
+         caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/san-cristobal/02.jpg', thumb: 'photos/san-cristobal/thumbs/02.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+        { src: 'photos/san-cristobal/02.jpg', thumb: 'photos/san-cristobal/thumbs/02.jpg',
+        alt: "",
+         caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/san-cristobal/03.jpg', thumb: 'photos/san-cristobal/thumbs/03.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+      { src: 'photos/san-cristobal/03.jpg', thumb: 'photos/san-cristobal/thumbs/03.jpg',
+       alt: "",
+        caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/san-cristobal/04.jpg', thumb: 'photos/san-cristobal/thumbs/04.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/san-cristobal/04.jpg', thumb: 'photos/san-cristobal/thumbs/04.jpg',
+         alt: "",
+       caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/san-cristobal/05.jpg', thumb: 'photos/san-cristobal/thumbs/05.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/san-cristobal/05.jpg', thumb: 'photos/san-cristobal/thumbs/05.jpg',
+         alt: "",
+         caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/san-cristobal/06.jpg', thumb: 'photos/san-cristobal/thumbs/06.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/san-cristobal/06.jpg', thumb: 'photos/san-cristobal/thumbs/06.jpg',
+         alt: "",
+        caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/san-cristobal/07.jpg', thumb: 'photos/san-cristobal/thumbs/07.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/san-cristobal/07.jpg', thumb: 'photos/san-cristobal/thumbs/07.jpg',
+         alt: "",
+        caption: { fr: '', en: '', es: '' } },
 
       // { src: 'photos/san-cristobal/08.jpg', thumb: 'photos/san-cristobal/thumbs/08.jpg',
       //   alt: "",
