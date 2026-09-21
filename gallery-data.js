@@ -302,6 +302,22 @@ const GALLERIES = {
 
       { src: 'photos/puerto-escondido/05.jpg', thumb: 'photos/puerto-escondido/thumbs/05.jpg',
         alt: "Attablé dans un bar de plage au toit de chaume, carnet ouvert",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/puerto-escondido/06.jpg', thumb: 'photos/puerto-escondido/thumbs/06.jpg',
+        alt: "Crique de sable bordée de végétation, avec parasols bleus et paillote",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/puerto-escondido/07.jpg', thumb: 'photos/puerto-escondido/thumbs/07.jpg',
+        alt: "Chemin de pierre descendant vers une plage de sable doré, vagues sur les rochers",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/puerto-escondido/08.jpg', thumb: 'photos/puerto-escondido/thumbs/08.jpg',
+        alt: "Plage bordée de paillotes et de palmiers, vue depuis des rochers",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/puerto-escondido/09.jpg', thumb: 'photos/puerto-escondido/thumbs/09.jpg',
+        alt: "Plage de sable avec bateaux et palmiers, vue depuis les rochers",
         caption: { fr: '', en: '', es: '' } }
     ]
   }
