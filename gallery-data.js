@@ -279,6 +279,31 @@ const GALLERIES = {
         alt: "Rue aux façades colorées, vue d'en haut, en fin de journée",
         caption: { fr: '', en: '', es: '' } }
     ]
+  },
+
+  'puerto-escondido': {
+    title: { fr: 'Photos de Puerto Escondido', en: 'Puerto Escondido photos', es: 'Fotos de Puerto Escondido' },
+    photos: [
+      { src: 'photos/puerto-escondido/01.jpg', thumb: 'photos/puerto-escondido/thumbs/01.jpg',
+        alt: "Escalier de pierre qui descend vers l'océan, bordé de hautes herbes",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/puerto-escondido/02.jpg', thumb: 'photos/puerto-escondido/thumbs/02.jpg',
+        alt: "Crique bordée de falaises verdoyantes et de rochers, vue d'en haut",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/puerto-escondido/03.jpg', thumb: 'photos/puerto-escondido/thumbs/03.jpg',
+        alt: "Sur un belvédère de pierre au-dessus de la crique",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/puerto-escondido/04.jpg', thumb: 'photos/puerto-escondido/thumbs/04.jpg',
+        alt: "Plage de sable, vagues et drapeau rouge, deux promeneuses",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/puerto-escondido/05.jpg', thumb: 'photos/puerto-escondido/thumbs/05.jpg',
+        alt: "Attablé dans un bar de plage au toit de chaume, carnet ouvert",
+        caption: { fr: '', en: '', es: '' } }
+    ]
   }
 
 };
