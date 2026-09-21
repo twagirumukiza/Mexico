@@ -37,6 +37,8 @@ const translations = {
     "gallery.oaxaca.btn": "Voir les photos d'Oaxaca",
     "gallery.montealban.btn": "Voir les photos de Monte Albán",
     "t3.btn": "Explorer Teotihuacán en 3D",
+    "t3.montealban.btn": "Explorer Monte Albán en 3D",
+    "gallery.teotitlan.btn": "Voir les photos de Teotitlán del Valle",
     "t3.sub": "Carte 3D interactive avec les points-photos",
     "gallery.hint": "← → naviguer • molette ou pincer pour zoomer • double-clic • Échap pour fermer",
     "itinerary.title": "Itinéraire",
@@ -138,6 +140,8 @@ const translations = {
     "gallery.oaxaca.btn": "See the Oaxaca photos",
     "gallery.montealban.btn": "See the Monte Albán photos",
     "t3.btn": "Explore Teotihuacán in 3D",
+    "t3.montealban.btn": "Explore Monte Albán in 3D",
+    "gallery.teotitlan.btn": "See the Teotitlán del Valle photos",
     "t3.sub": "Interactive 3D map with photo points",
     "gallery.hint": "← → navigate • scroll or pinch to zoom • double-click • Esc to close",
     "itinerary.title": "Itinerary",
@@ -238,6 +242,8 @@ const translations = {
     "gallery.oaxaca.btn": "Ver las fotos de Oaxaca",
     "gallery.montealban.btn": "Ver las fotos de Monte Albán",
     "t3.btn": "Explorar Teotihuacán en 3D",
+    "t3.montealban.btn": "Explorar Monte Albán en 3D",
+    "gallery.teotitlan.btn": "Ver las fotos de Teotitlán del Valle",
     "t3.sub": "Mapa 3D interactivo con puntos de fotos",
     "gallery.hint": "← → navegar • rueda o pellizcar para zoom • doble clic • Esc para cerrar",
     "itinerary.title": "Itinerario",
@@ -1000,18 +1006,24 @@ function initGalleries() {
 }
 
 
-// ===== Carte 3D de Teotihuacán (chargée à la demande) =====
+// ===== Cartes 3D (Teotihuacán, Monte Albán) — chargées à la demande =====
+function loadScript(src) {
+  return new Promise((resolve, reject) => {
+    const el = document.createElement('script');
+    el.src = src; el.onload = resolve; el.onerror = reject;
+    document.head.appendChild(el);
+  });
+}
 function initTeo3D() {
   document.querySelectorAll('[data-open3d]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const go = () => window.Teo3D && window.Teo3D.open(btn);
-      if (window.Teo3D) { go(); return; }
-      btn.classList.add('loading');
-      const s = document.createElement('script');
-      s.src = 'teotihuacan-3d.js';
-      s.onload = () => { btn.classList.remove('loading'); go(); };
-      s.onerror = () => btn.classList.remove('loading');
-      document.head.appendChild(s);
+    btn.addEventListener('click', async () => {
+      const id = btn.dataset.open3d || 'teotihuacan';
+      try {
+        if (!window.Site3D) { btn.classList.add('loading'); await loadScript('site3d.js'); }
+        if (!window.Site3D.has(id)) { btn.classList.add('loading'); await loadScript(id + '-3d.js'); }
+        window.Site3D.open(id, btn);
+      } catch (e) { console.error(e); }
+      btn.classList.remove('loading');
     });
   });
 }

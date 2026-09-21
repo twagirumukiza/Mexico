@@ -19,8 +19,9 @@
 
    POSITION SUR LA MAQUETTE 3D (galerie 'teotihuacan' uniquement) :
      pos: { u, v, dir }   (h est facultatif : altitude de l'œil en mètres)
-       u   = mètres le long de l'Avenue des Morts (0 = Pyramide de la Lune,
-             valeurs négatives vers le sud / la Ciudadela)
+       u   = mètres vers le nord de l'axe du site (Teotihuacán : le long de l'Avenue
+             des Morts, 0 = Pyramide de la Lune, négatif vers le sud ; Monte Albán :
+             0 = centre de la Grande Place)
        v   = mètres à l'est (+) ou à l'ouest (−) de l'axe de l'avenue
        dir = direction de la prise de vue en degrés, 0 = nord de l'avenue,
              90 = est, 180 = sud, 270 = ouest (facultatif)
@@ -204,30 +205,78 @@ const GALLERIES = {
     photos: [
       { src: 'photos/monte-alban/01.jpg', thumb: 'photos/monte-alban/thumbs/01.jpg',
         alt: "Vue sur la vallée d'Oaxaca depuis la colline de Monte Albán",
+        pos: { u: -160, v: 340, dir: 90 },   // sentier sur la pente est, face à la vallée d'Oaxaca
         caption: { fr: '', en: '', es: '' } },
 
       { src: 'photos/monte-alban/02.jpg', thumb: 'photos/monte-alban/thumbs/02.jpg',
         alt: "Devant un escalier et une rampe de pierre du site archéologique",
+        pos: { u: -5, v: -72, dir: 270 },   // Grande Place, côté ouest du groupe central
         caption: { fr: '', en: '', es: '' } },
 
       { src: 'photos/monte-alban/03.jpg', thumb: 'photos/monte-alban/thumbs/03.jpg',
         alt: "Terrain de jeu de balle aux talus inclinés, sur l'herbe verte",
+        pos: { u: -44, v: 78, dir: 0 },   // extrémité sud du jeu de balle, face au nord
         caption: { fr: '', en: '', es: '' } },
 
       { src: 'photos/monte-alban/04.jpg', thumb: 'photos/monte-alban/thumbs/04.jpg',
         alt: "Plateforme de pierre et son grand escalier",
+        pos: { u: 100, v: 0, dir: 0 },   // Grande Place, face à la Plateforme Nord
         caption: { fr: '', en: '', es: '' } },
 
       { src: 'photos/monte-alban/05.jpg', thumb: 'photos/monte-alban/thumbs/05.jpg',
         alt: "Bâtiment de pierre avec une porte à linteau, derrière l'esplanade",
+        pos: { u: 112, v: -40, dir: 0 },   // Grande Place, face à la Plateforme Nord
         caption: { fr: '', en: '', es: '' } },
 
       { src: 'photos/monte-alban/06.jpg', thumb: 'photos/monte-alban/thumbs/06.jpg',
         alt: "Montée d'un escalier de pierre, avec l'esplanade et un tertre en contrebas",
+        pos: { u: -160, v: 8, dir: 0 },   // grand escalier de la Plateforme Sud, face au nord
         caption: { fr: '', en: '', es: '' } },
 
       { src: 'photos/monte-alban/07.jpg', thumb: 'photos/monte-alban/thumbs/07.jpg',
         alt: "Accroupi dans un étroit passage de pierre",
+        pos: { u: -25, v: -58, dir: 0 },   // passage de pierre près de l'Édifice des Danzantes
+        caption: { fr: '', en: '', es: '' } }
+    ]
+  },
+
+  'teotitlan': {
+    title: { fr: 'Photos de Teotitlán del Valle', en: 'Teotitlán del Valle photos', es: 'Fotos de Teotitlán del Valle' },
+    photos: [
+      { src: 'photos/teotitlan/01.jpg', thumb: 'photos/teotitlan/thumbs/01.jpg',
+        alt: "Autobus beige n° 52 « Central » qui dessert le Tule, sur un chemin de terre",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/teotitlan/02.jpg', thumb: 'photos/teotitlan/thumbs/02.jpg',
+        alt: "Chemin de terre qui monte dans un village, colline verte au fond",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/teotitlan/03.jpg', thumb: 'photos/teotitlan/thumbs/03.jpg',
+        alt: "Grand métier à tisser traditionnel en bois",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/teotitlan/04.jpg', thumb: 'photos/teotitlan/thumbs/04.jpg',
+        alt: "Fils de chaîne jaunes tendus et rouleau de fil blanc sur le métier",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/teotitlan/05.jpg', thumb: 'photos/teotitlan/thumbs/05.jpg',
+        alt: "Artisan au travail devant un dévidoir de laine, échevettes teintes accrochées au mur",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/teotitlan/06.jpg', thumb: 'photos/teotitlan/thumbs/06.jpg',
+        alt: "Atelier de tissage : échevettes de laine teintes de toutes les couleurs et métiers à tisser",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/teotitlan/07.jpg', thumb: 'photos/teotitlan/thumbs/07.jpg',
+        alt: "Attelage de bœufs décoré de feuillages entrant par un portail",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/teotitlan/08.jpg', thumb: 'photos/teotitlan/thumbs/08.jpg',
+        alt: "Rue pavée animée de passants, vue d'en haut",
+        caption: { fr: '', en: '', es: '' } },
+
+      { src: 'photos/teotitlan/09.jpg', thumb: 'photos/teotitlan/thumbs/09.jpg',
+        alt: "Rue aux façades colorées, vue d'en haut, en fin de journée",
         caption: { fr: '', en: '', es: '' } }
     ]
   }
