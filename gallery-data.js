@@ -815,7 +815,8 @@ const GALLERIES = {
     // remplissez src/thumb/alt, et déplacez chaque bloc hors des commentaires
     // (dans le tableau photos: [...]) au fur et à mesure que vous ajoutez des images
     // dans photos/san-cristobal/ (grande version) et photos/san-cristobal/thumbs/ (miniature 220x160).
-       { src: 'photos/san-cristobal/01.jpg', thumb: 'photos/san-cristobal/thumbs/01.jpg',
+     photos: [ 
+     { src: 'photos/san-cristobal/01.jpg', thumb: 'photos/san-cristobal/thumbs/01.jpg',
         alt: "",
          caption: { fr: '', en: '', es: '' } },
 
@@ -1210,7 +1211,7 @@ const GALLERIES = {
       // { src: 'photos/san-cristobal/99.jpg', thumb: 'photos/san-cristobal/thumbs/99.jpg',
       //   alt: "",
       //   caption: { fr: '', en: '', es: '' } },
-    photos: []
+    ]
   },
 
   'palenque': {
