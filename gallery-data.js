@@ -96,7 +96,53 @@ const GALLERIES = {
 
       { src: 'photos/mexico-city/14.jpg', thumb: 'photos/mexico-city/thumbs/14.jpg',
         alt: "Promenade dans une allée arborée",
-        caption: { fr: '', en: '', es: '' } }
+        caption: { fr: '', en: '', es: '' } },
+
+      // --- Emplacements prêts jusqu'à 25 photos : décommentez et
+      // remplacez src/thumb/alt pour ajouter une photo ---
+      // { src: 'photos/mexico-city/15.jpg', thumb: 'photos/mexico-city/thumbs/15.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/mexico-city/16.jpg', thumb: 'photos/mexico-city/thumbs/16.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/mexico-city/17.jpg', thumb: 'photos/mexico-city/thumbs/17.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/mexico-city/18.jpg', thumb: 'photos/mexico-city/thumbs/18.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/mexico-city/19.jpg', thumb: 'photos/mexico-city/thumbs/19.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/mexico-city/20.jpg', thumb: 'photos/mexico-city/thumbs/20.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/mexico-city/21.jpg', thumb: 'photos/mexico-city/thumbs/21.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/mexico-city/22.jpg', thumb: 'photos/mexico-city/thumbs/22.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/mexico-city/23.jpg', thumb: 'photos/mexico-city/thumbs/23.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/mexico-city/24.jpg', thumb: 'photos/mexico-city/thumbs/24.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/mexico-city/25.jpg', thumb: 'photos/mexico-city/thumbs/25.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
     ]
   },
 
@@ -171,7 +217,53 @@ const GALLERIES = {
       { src: 'photos/teotihuacan/14.jpg', thumb: 'photos/teotihuacan/thumbs/14.jpg',
         alt: "Grand escalier de la Pyramide du Soleil, foule et vendeurs sur l'esplanade",
         pos: { u: -445, v: 84, dir: 90 },   // devant le grand escalier
-        caption: { fr: '', en: '', es: '' } }
+        caption: { fr: '', en: '', es: '' } },
+
+      // --- Emplacements prêts jusqu'à 25 photos : décommentez et
+      // remplacez src/thumb/alt pour ajouter une photo ---
+      // { src: 'photos/teotihuacan/15.jpg', thumb: 'photos/teotihuacan/thumbs/15.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/teotihuacan/16.jpg', thumb: 'photos/teotihuacan/thumbs/16.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/teotihuacan/17.jpg', thumb: 'photos/teotihuacan/thumbs/17.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/teotihuacan/18.jpg', thumb: 'photos/teotihuacan/thumbs/18.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/teotihuacan/19.jpg', thumb: 'photos/teotihuacan/thumbs/19.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/teotihuacan/20.jpg', thumb: 'photos/teotihuacan/thumbs/20.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/teotihuacan/21.jpg', thumb: 'photos/teotihuacan/thumbs/21.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/teotihuacan/22.jpg', thumb: 'photos/teotihuacan/thumbs/22.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/teotihuacan/23.jpg', thumb: 'photos/teotihuacan/thumbs/23.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/teotihuacan/24.jpg', thumb: 'photos/teotihuacan/thumbs/24.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/teotihuacan/25.jpg', thumb: 'photos/teotihuacan/thumbs/25.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
     ]
   },
 
@@ -196,7 +288,89 @@ const GALLERIES = {
 
       { src: 'photos/oaxaca/05.jpg', thumb: 'photos/oaxaca/thumbs/05.jpg',
         alt: "Promenade sur le trottoir d'une rue du centre historique d'Oaxaca",
-        caption: { fr: '', en: '', es: '' } }
+        caption: { fr: '', en: '', es: '' } },
+
+      // --- Emplacements prêts jusqu'à 25 photos : décommentez et
+      // remplacez src/thumb/alt pour ajouter une photo ---
+      // { src: 'photos/oaxaca/06.jpg', thumb: 'photos/oaxaca/thumbs/06.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/oaxaca/07.jpg', thumb: 'photos/oaxaca/thumbs/07.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/oaxaca/08.jpg', thumb: 'photos/oaxaca/thumbs/08.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/oaxaca/09.jpg', thumb: 'photos/oaxaca/thumbs/09.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/oaxaca/10.jpg', thumb: 'photos/oaxaca/thumbs/10.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/oaxaca/11.jpg', thumb: 'photos/oaxaca/thumbs/11.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/oaxaca/12.jpg', thumb: 'photos/oaxaca/thumbs/12.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/oaxaca/13.jpg', thumb: 'photos/oaxaca/thumbs/13.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/oaxaca/14.jpg', thumb: 'photos/oaxaca/thumbs/14.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/oaxaca/15.jpg', thumb: 'photos/oaxaca/thumbs/15.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/oaxaca/16.jpg', thumb: 'photos/oaxaca/thumbs/16.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/oaxaca/17.jpg', thumb: 'photos/oaxaca/thumbs/17.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/oaxaca/18.jpg', thumb: 'photos/oaxaca/thumbs/18.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/oaxaca/19.jpg', thumb: 'photos/oaxaca/thumbs/19.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/oaxaca/20.jpg', thumb: 'photos/oaxaca/thumbs/20.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/oaxaca/21.jpg', thumb: 'photos/oaxaca/thumbs/21.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/oaxaca/22.jpg', thumb: 'photos/oaxaca/thumbs/22.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/oaxaca/23.jpg', thumb: 'photos/oaxaca/thumbs/23.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/oaxaca/24.jpg', thumb: 'photos/oaxaca/thumbs/24.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/oaxaca/25.jpg', thumb: 'photos/oaxaca/thumbs/25.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
     ]
   },
 
@@ -236,7 +410,81 @@ const GALLERIES = {
       { src: 'photos/monte-alban/07.jpg', thumb: 'photos/monte-alban/thumbs/07.jpg',
         alt: "Accroupi dans un étroit passage de pierre",
         pos: { u: -25, v: -58, dir: 0 },   // passage de pierre près de l'Édifice des Danzantes
-        caption: { fr: '', en: '', es: '' } }
+        caption: { fr: '', en: '', es: '' } },
+
+      // --- Emplacements prêts jusqu'à 25 photos : décommentez et
+      // remplacez src/thumb/alt pour ajouter une photo ---
+      // { src: 'photos/monte-alban/08.jpg', thumb: 'photos/monte-alban/thumbs/08.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/monte-alban/09.jpg', thumb: 'photos/monte-alban/thumbs/09.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/monte-alban/10.jpg', thumb: 'photos/monte-alban/thumbs/10.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/monte-alban/11.jpg', thumb: 'photos/monte-alban/thumbs/11.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/monte-alban/12.jpg', thumb: 'photos/monte-alban/thumbs/12.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/monte-alban/13.jpg', thumb: 'photos/monte-alban/thumbs/13.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/monte-alban/14.jpg', thumb: 'photos/monte-alban/thumbs/14.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/monte-alban/15.jpg', thumb: 'photos/monte-alban/thumbs/15.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/monte-alban/16.jpg', thumb: 'photos/monte-alban/thumbs/16.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/monte-alban/17.jpg', thumb: 'photos/monte-alban/thumbs/17.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/monte-alban/18.jpg', thumb: 'photos/monte-alban/thumbs/18.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/monte-alban/19.jpg', thumb: 'photos/monte-alban/thumbs/19.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/monte-alban/20.jpg', thumb: 'photos/monte-alban/thumbs/20.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/monte-alban/21.jpg', thumb: 'photos/monte-alban/thumbs/21.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/monte-alban/22.jpg', thumb: 'photos/monte-alban/thumbs/22.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/monte-alban/23.jpg', thumb: 'photos/monte-alban/thumbs/23.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/monte-alban/24.jpg', thumb: 'photos/monte-alban/thumbs/24.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/monte-alban/25.jpg', thumb: 'photos/monte-alban/thumbs/25.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
     ]
   },
 
@@ -277,7 +525,73 @@ const GALLERIES = {
 
       { src: 'photos/teotitlan/09.jpg', thumb: 'photos/teotitlan/thumbs/09.jpg',
         alt: "Rue aux façades colorées, vue d'en haut, en fin de journée",
-        caption: { fr: '', en: '', es: '' } }
+        caption: { fr: '', en: '', es: '' } },
+
+      // --- Emplacements prêts jusqu'à 25 photos : décommentez et
+      // remplacez src/thumb/alt pour ajouter une photo ---
+      // { src: 'photos/teotitlan/10.jpg', thumb: 'photos/teotitlan/thumbs/10.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/teotitlan/11.jpg', thumb: 'photos/teotitlan/thumbs/11.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/teotitlan/12.jpg', thumb: 'photos/teotitlan/thumbs/12.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/teotitlan/13.jpg', thumb: 'photos/teotitlan/thumbs/13.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/teotitlan/14.jpg', thumb: 'photos/teotitlan/thumbs/14.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/teotitlan/15.jpg', thumb: 'photos/teotitlan/thumbs/15.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/teotitlan/16.jpg', thumb: 'photos/teotitlan/thumbs/16.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/teotitlan/17.jpg', thumb: 'photos/teotitlan/thumbs/17.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/teotitlan/18.jpg', thumb: 'photos/teotitlan/thumbs/18.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/teotitlan/19.jpg', thumb: 'photos/teotitlan/thumbs/19.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/teotitlan/20.jpg', thumb: 'photos/teotitlan/thumbs/20.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/teotitlan/21.jpg', thumb: 'photos/teotitlan/thumbs/21.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/teotitlan/22.jpg', thumb: 'photos/teotitlan/thumbs/22.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/teotitlan/23.jpg', thumb: 'photos/teotitlan/thumbs/23.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/teotitlan/24.jpg', thumb: 'photos/teotitlan/thumbs/24.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/teotitlan/25.jpg', thumb: 'photos/teotitlan/thumbs/25.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
     ]
   },
 
@@ -318,7 +632,73 @@ const GALLERIES = {
 
       { src: 'photos/puerto-escondido/09.jpg', thumb: 'photos/puerto-escondido/thumbs/09.jpg',
         alt: "Plage de sable avec bateaux et palmiers, vue depuis les rochers",
-        caption: { fr: '', en: '', es: '' } }
+        caption: { fr: '', en: '', es: '' } },
+
+      // --- Emplacements prêts jusqu'à 25 photos : décommentez et
+      // remplacez src/thumb/alt pour ajouter une photo ---
+      // { src: 'photos/puerto-escondido/10.jpg', thumb: 'photos/puerto-escondido/thumbs/10.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/puerto-escondido/11.jpg', thumb: 'photos/puerto-escondido/thumbs/11.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/puerto-escondido/12.jpg', thumb: 'photos/puerto-escondido/thumbs/12.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/puerto-escondido/13.jpg', thumb: 'photos/puerto-escondido/thumbs/13.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/puerto-escondido/14.jpg', thumb: 'photos/puerto-escondido/thumbs/14.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/puerto-escondido/15.jpg', thumb: 'photos/puerto-escondido/thumbs/15.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/puerto-escondido/16.jpg', thumb: 'photos/puerto-escondido/thumbs/16.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/puerto-escondido/17.jpg', thumb: 'photos/puerto-escondido/thumbs/17.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/puerto-escondido/18.jpg', thumb: 'photos/puerto-escondido/thumbs/18.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/puerto-escondido/19.jpg', thumb: 'photos/puerto-escondido/thumbs/19.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/puerto-escondido/20.jpg', thumb: 'photos/puerto-escondido/thumbs/20.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/puerto-escondido/21.jpg', thumb: 'photos/puerto-escondido/thumbs/21.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/puerto-escondido/22.jpg', thumb: 'photos/puerto-escondido/thumbs/22.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/puerto-escondido/23.jpg', thumb: 'photos/puerto-escondido/thumbs/23.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/puerto-escondido/24.jpg', thumb: 'photos/puerto-escondido/thumbs/24.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/puerto-escondido/25.jpg', thumb: 'photos/puerto-escondido/thumbs/25.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
     ]
   },
 
@@ -359,7 +739,73 @@ const GALLERIES = {
 
       { src: 'photos/mazunte/09.jpg', thumb: 'photos/mazunte/thumbs/09.jpg',
         alt: "Tortue marine posée sur le sable, vue de face",
-        caption: { fr: '', en: '', es: '' } }
+        caption: { fr: '', en: '', es: '' } },
+
+      // --- Emplacements prêts jusqu'à 25 photos : décommentez et
+      // remplacez src/thumb/alt pour ajouter une photo ---
+      // { src: 'photos/mazunte/10.jpg', thumb: 'photos/mazunte/thumbs/10.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/mazunte/11.jpg', thumb: 'photos/mazunte/thumbs/11.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/mazunte/12.jpg', thumb: 'photos/mazunte/thumbs/12.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/mazunte/13.jpg', thumb: 'photos/mazunte/thumbs/13.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/mazunte/14.jpg', thumb: 'photos/mazunte/thumbs/14.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/mazunte/15.jpg', thumb: 'photos/mazunte/thumbs/15.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/mazunte/16.jpg', thumb: 'photos/mazunte/thumbs/16.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/mazunte/17.jpg', thumb: 'photos/mazunte/thumbs/17.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/mazunte/18.jpg', thumb: 'photos/mazunte/thumbs/18.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/mazunte/19.jpg', thumb: 'photos/mazunte/thumbs/19.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/mazunte/20.jpg', thumb: 'photos/mazunte/thumbs/20.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/mazunte/21.jpg', thumb: 'photos/mazunte/thumbs/21.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/mazunte/22.jpg', thumb: 'photos/mazunte/thumbs/22.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/mazunte/23.jpg', thumb: 'photos/mazunte/thumbs/23.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/mazunte/24.jpg', thumb: 'photos/mazunte/thumbs/24.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/mazunte/25.jpg', thumb: 'photos/mazunte/thumbs/25.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
     ]
   },
 
