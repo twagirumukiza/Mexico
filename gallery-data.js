@@ -811,7 +811,7 @@ const GALLERIES = {
 
   'san-cristobal': {
     title: { fr: 'Photos de San Cristóbal de las Casas', en: 'San Cristóbal de las Casas photos', es: 'Fotos de San Cristóbal de las Casas' },
-    // Prêt pour jusqu'à 25 photos : dupliquez/décommentez les lignes ci-dessous,
+    // Prêt pour jusqu'à 99 photos : dupliquez/décommentez les lignes ci-dessous,
     // remplissez src/thumb/alt, et déplacez chaque bloc hors des commentaires
     // (dans le tableau photos: [...]) au fur et à mesure que vous ajoutez des images
     // dans photos/san-cristobal/ (grande version) et photos/san-cristobal/thumbs/ (miniature 220x160).
@@ -914,12 +914,308 @@ const GALLERIES = {
       // { src: 'photos/san-cristobal/25.jpg', thumb: 'photos/san-cristobal/thumbs/25.jpg',
       //   alt: "",
       //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/26.jpg', thumb: 'photos/san-cristobal/thumbs/26.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/27.jpg', thumb: 'photos/san-cristobal/thumbs/27.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/28.jpg', thumb: 'photos/san-cristobal/thumbs/28.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/29.jpg', thumb: 'photos/san-cristobal/thumbs/29.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/30.jpg', thumb: 'photos/san-cristobal/thumbs/30.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/31.jpg', thumb: 'photos/san-cristobal/thumbs/31.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/32.jpg', thumb: 'photos/san-cristobal/thumbs/32.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/33.jpg', thumb: 'photos/san-cristobal/thumbs/33.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/34.jpg', thumb: 'photos/san-cristobal/thumbs/34.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/35.jpg', thumb: 'photos/san-cristobal/thumbs/35.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/36.jpg', thumb: 'photos/san-cristobal/thumbs/36.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/37.jpg', thumb: 'photos/san-cristobal/thumbs/37.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/38.jpg', thumb: 'photos/san-cristobal/thumbs/38.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/39.jpg', thumb: 'photos/san-cristobal/thumbs/39.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/40.jpg', thumb: 'photos/san-cristobal/thumbs/40.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/41.jpg', thumb: 'photos/san-cristobal/thumbs/41.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/42.jpg', thumb: 'photos/san-cristobal/thumbs/42.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/43.jpg', thumb: 'photos/san-cristobal/thumbs/43.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/44.jpg', thumb: 'photos/san-cristobal/thumbs/44.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/45.jpg', thumb: 'photos/san-cristobal/thumbs/45.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/46.jpg', thumb: 'photos/san-cristobal/thumbs/46.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/47.jpg', thumb: 'photos/san-cristobal/thumbs/47.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/48.jpg', thumb: 'photos/san-cristobal/thumbs/48.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/49.jpg', thumb: 'photos/san-cristobal/thumbs/49.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/50.jpg', thumb: 'photos/san-cristobal/thumbs/50.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/51.jpg', thumb: 'photos/san-cristobal/thumbs/51.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/52.jpg', thumb: 'photos/san-cristobal/thumbs/52.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/53.jpg', thumb: 'photos/san-cristobal/thumbs/53.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/54.jpg', thumb: 'photos/san-cristobal/thumbs/54.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/55.jpg', thumb: 'photos/san-cristobal/thumbs/55.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/56.jpg', thumb: 'photos/san-cristobal/thumbs/56.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/57.jpg', thumb: 'photos/san-cristobal/thumbs/57.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/58.jpg', thumb: 'photos/san-cristobal/thumbs/58.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/59.jpg', thumb: 'photos/san-cristobal/thumbs/59.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/60.jpg', thumb: 'photos/san-cristobal/thumbs/60.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/61.jpg', thumb: 'photos/san-cristobal/thumbs/61.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/62.jpg', thumb: 'photos/san-cristobal/thumbs/62.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/63.jpg', thumb: 'photos/san-cristobal/thumbs/63.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/64.jpg', thumb: 'photos/san-cristobal/thumbs/64.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/65.jpg', thumb: 'photos/san-cristobal/thumbs/65.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/66.jpg', thumb: 'photos/san-cristobal/thumbs/66.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/67.jpg', thumb: 'photos/san-cristobal/thumbs/67.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/68.jpg', thumb: 'photos/san-cristobal/thumbs/68.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/69.jpg', thumb: 'photos/san-cristobal/thumbs/69.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/70.jpg', thumb: 'photos/san-cristobal/thumbs/70.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/71.jpg', thumb: 'photos/san-cristobal/thumbs/71.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/72.jpg', thumb: 'photos/san-cristobal/thumbs/72.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/73.jpg', thumb: 'photos/san-cristobal/thumbs/73.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/74.jpg', thumb: 'photos/san-cristobal/thumbs/74.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/75.jpg', thumb: 'photos/san-cristobal/thumbs/75.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/76.jpg', thumb: 'photos/san-cristobal/thumbs/76.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/77.jpg', thumb: 'photos/san-cristobal/thumbs/77.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/78.jpg', thumb: 'photos/san-cristobal/thumbs/78.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/79.jpg', thumb: 'photos/san-cristobal/thumbs/79.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/80.jpg', thumb: 'photos/san-cristobal/thumbs/80.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/81.jpg', thumb: 'photos/san-cristobal/thumbs/81.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/82.jpg', thumb: 'photos/san-cristobal/thumbs/82.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/83.jpg', thumb: 'photos/san-cristobal/thumbs/83.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/84.jpg', thumb: 'photos/san-cristobal/thumbs/84.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/85.jpg', thumb: 'photos/san-cristobal/thumbs/85.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/86.jpg', thumb: 'photos/san-cristobal/thumbs/86.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/87.jpg', thumb: 'photos/san-cristobal/thumbs/87.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/88.jpg', thumb: 'photos/san-cristobal/thumbs/88.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/89.jpg', thumb: 'photos/san-cristobal/thumbs/89.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/90.jpg', thumb: 'photos/san-cristobal/thumbs/90.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/91.jpg', thumb: 'photos/san-cristobal/thumbs/91.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/92.jpg', thumb: 'photos/san-cristobal/thumbs/92.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/93.jpg', thumb: 'photos/san-cristobal/thumbs/93.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/94.jpg', thumb: 'photos/san-cristobal/thumbs/94.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/95.jpg', thumb: 'photos/san-cristobal/thumbs/95.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/96.jpg', thumb: 'photos/san-cristobal/thumbs/96.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/97.jpg', thumb: 'photos/san-cristobal/thumbs/97.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/98.jpg', thumb: 'photos/san-cristobal/thumbs/98.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/san-cristobal/99.jpg', thumb: 'photos/san-cristobal/thumbs/99.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
     photos: []
   },
 
   'palenque': {
     title: { fr: 'Photos de Palenque', en: 'Palenque photos', es: 'Fotos de Palenque' },
-    // Prêt pour jusqu'à 25 photos : dupliquez/décommentez les lignes ci-dessous,
+    // Prêt pour jusqu'à 99 photos : dupliquez/décommentez les lignes ci-dessous,
     // remplissez src/thumb/alt, et déplacez chaque bloc hors des commentaires
     // (dans le tableau photos: [...]) au fur et à mesure que vous ajoutez des images
     // dans photos/palenque/ (grande version) et photos/palenque/thumbs/ (miniature 220x160).
@@ -1022,12 +1318,308 @@ const GALLERIES = {
       // { src: 'photos/palenque/25.jpg', thumb: 'photos/palenque/thumbs/25.jpg',
       //   alt: "",
       //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/26.jpg', thumb: 'photos/palenque/thumbs/26.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/27.jpg', thumb: 'photos/palenque/thumbs/27.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/28.jpg', thumb: 'photos/palenque/thumbs/28.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/29.jpg', thumb: 'photos/palenque/thumbs/29.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/30.jpg', thumb: 'photos/palenque/thumbs/30.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/31.jpg', thumb: 'photos/palenque/thumbs/31.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/32.jpg', thumb: 'photos/palenque/thumbs/32.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/33.jpg', thumb: 'photos/palenque/thumbs/33.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/34.jpg', thumb: 'photos/palenque/thumbs/34.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/35.jpg', thumb: 'photos/palenque/thumbs/35.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/36.jpg', thumb: 'photos/palenque/thumbs/36.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/37.jpg', thumb: 'photos/palenque/thumbs/37.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/38.jpg', thumb: 'photos/palenque/thumbs/38.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/39.jpg', thumb: 'photos/palenque/thumbs/39.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/40.jpg', thumb: 'photos/palenque/thumbs/40.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/41.jpg', thumb: 'photos/palenque/thumbs/41.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/42.jpg', thumb: 'photos/palenque/thumbs/42.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/43.jpg', thumb: 'photos/palenque/thumbs/43.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/44.jpg', thumb: 'photos/palenque/thumbs/44.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/45.jpg', thumb: 'photos/palenque/thumbs/45.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/46.jpg', thumb: 'photos/palenque/thumbs/46.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/47.jpg', thumb: 'photos/palenque/thumbs/47.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/48.jpg', thumb: 'photos/palenque/thumbs/48.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/49.jpg', thumb: 'photos/palenque/thumbs/49.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/50.jpg', thumb: 'photos/palenque/thumbs/50.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/51.jpg', thumb: 'photos/palenque/thumbs/51.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/52.jpg', thumb: 'photos/palenque/thumbs/52.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/53.jpg', thumb: 'photos/palenque/thumbs/53.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/54.jpg', thumb: 'photos/palenque/thumbs/54.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/55.jpg', thumb: 'photos/palenque/thumbs/55.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/56.jpg', thumb: 'photos/palenque/thumbs/56.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/57.jpg', thumb: 'photos/palenque/thumbs/57.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/58.jpg', thumb: 'photos/palenque/thumbs/58.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/59.jpg', thumb: 'photos/palenque/thumbs/59.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/60.jpg', thumb: 'photos/palenque/thumbs/60.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/61.jpg', thumb: 'photos/palenque/thumbs/61.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/62.jpg', thumb: 'photos/palenque/thumbs/62.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/63.jpg', thumb: 'photos/palenque/thumbs/63.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/64.jpg', thumb: 'photos/palenque/thumbs/64.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/65.jpg', thumb: 'photos/palenque/thumbs/65.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/66.jpg', thumb: 'photos/palenque/thumbs/66.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/67.jpg', thumb: 'photos/palenque/thumbs/67.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/68.jpg', thumb: 'photos/palenque/thumbs/68.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/69.jpg', thumb: 'photos/palenque/thumbs/69.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/70.jpg', thumb: 'photos/palenque/thumbs/70.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/71.jpg', thumb: 'photos/palenque/thumbs/71.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/72.jpg', thumb: 'photos/palenque/thumbs/72.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/73.jpg', thumb: 'photos/palenque/thumbs/73.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/74.jpg', thumb: 'photos/palenque/thumbs/74.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/75.jpg', thumb: 'photos/palenque/thumbs/75.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/76.jpg', thumb: 'photos/palenque/thumbs/76.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/77.jpg', thumb: 'photos/palenque/thumbs/77.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/78.jpg', thumb: 'photos/palenque/thumbs/78.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/79.jpg', thumb: 'photos/palenque/thumbs/79.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/80.jpg', thumb: 'photos/palenque/thumbs/80.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/81.jpg', thumb: 'photos/palenque/thumbs/81.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/82.jpg', thumb: 'photos/palenque/thumbs/82.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/83.jpg', thumb: 'photos/palenque/thumbs/83.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/84.jpg', thumb: 'photos/palenque/thumbs/84.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/85.jpg', thumb: 'photos/palenque/thumbs/85.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/86.jpg', thumb: 'photos/palenque/thumbs/86.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/87.jpg', thumb: 'photos/palenque/thumbs/87.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/88.jpg', thumb: 'photos/palenque/thumbs/88.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/89.jpg', thumb: 'photos/palenque/thumbs/89.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/90.jpg', thumb: 'photos/palenque/thumbs/90.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/91.jpg', thumb: 'photos/palenque/thumbs/91.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/92.jpg', thumb: 'photos/palenque/thumbs/92.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/93.jpg', thumb: 'photos/palenque/thumbs/93.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/94.jpg', thumb: 'photos/palenque/thumbs/94.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/95.jpg', thumb: 'photos/palenque/thumbs/95.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/96.jpg', thumb: 'photos/palenque/thumbs/96.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/97.jpg', thumb: 'photos/palenque/thumbs/97.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/98.jpg', thumb: 'photos/palenque/thumbs/98.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/palenque/99.jpg', thumb: 'photos/palenque/thumbs/99.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
     photos: []
   },
 
   'flores-tikal': {
     title: { fr: 'Photos de Flores & Tikal', en: 'Flores & Tikal photos', es: 'Fotos de Flores y Tikal' },
-    // Prêt pour jusqu'à 25 photos : dupliquez/décommentez les lignes ci-dessous,
+    // Prêt pour jusqu'à 99 photos : dupliquez/décommentez les lignes ci-dessous,
     // remplissez src/thumb/alt, et déplacez chaque bloc hors des commentaires
     // (dans le tableau photos: [...]) au fur et à mesure que vous ajoutez des images
     // dans photos/flores-tikal/ (grande version) et photos/flores-tikal/thumbs/ (miniature 220x160).
@@ -1130,12 +1722,308 @@ const GALLERIES = {
       // { src: 'photos/flores-tikal/25.jpg', thumb: 'photos/flores-tikal/thumbs/25.jpg',
       //   alt: "",
       //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/26.jpg', thumb: 'photos/flores-tikal/thumbs/26.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/27.jpg', thumb: 'photos/flores-tikal/thumbs/27.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/28.jpg', thumb: 'photos/flores-tikal/thumbs/28.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/29.jpg', thumb: 'photos/flores-tikal/thumbs/29.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/30.jpg', thumb: 'photos/flores-tikal/thumbs/30.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/31.jpg', thumb: 'photos/flores-tikal/thumbs/31.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/32.jpg', thumb: 'photos/flores-tikal/thumbs/32.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/33.jpg', thumb: 'photos/flores-tikal/thumbs/33.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/34.jpg', thumb: 'photos/flores-tikal/thumbs/34.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/35.jpg', thumb: 'photos/flores-tikal/thumbs/35.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/36.jpg', thumb: 'photos/flores-tikal/thumbs/36.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/37.jpg', thumb: 'photos/flores-tikal/thumbs/37.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/38.jpg', thumb: 'photos/flores-tikal/thumbs/38.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/39.jpg', thumb: 'photos/flores-tikal/thumbs/39.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/40.jpg', thumb: 'photos/flores-tikal/thumbs/40.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/41.jpg', thumb: 'photos/flores-tikal/thumbs/41.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/42.jpg', thumb: 'photos/flores-tikal/thumbs/42.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/43.jpg', thumb: 'photos/flores-tikal/thumbs/43.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/44.jpg', thumb: 'photos/flores-tikal/thumbs/44.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/45.jpg', thumb: 'photos/flores-tikal/thumbs/45.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/46.jpg', thumb: 'photos/flores-tikal/thumbs/46.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/47.jpg', thumb: 'photos/flores-tikal/thumbs/47.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/48.jpg', thumb: 'photos/flores-tikal/thumbs/48.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/49.jpg', thumb: 'photos/flores-tikal/thumbs/49.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/50.jpg', thumb: 'photos/flores-tikal/thumbs/50.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/51.jpg', thumb: 'photos/flores-tikal/thumbs/51.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/52.jpg', thumb: 'photos/flores-tikal/thumbs/52.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/53.jpg', thumb: 'photos/flores-tikal/thumbs/53.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/54.jpg', thumb: 'photos/flores-tikal/thumbs/54.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/55.jpg', thumb: 'photos/flores-tikal/thumbs/55.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/56.jpg', thumb: 'photos/flores-tikal/thumbs/56.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/57.jpg', thumb: 'photos/flores-tikal/thumbs/57.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/58.jpg', thumb: 'photos/flores-tikal/thumbs/58.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/59.jpg', thumb: 'photos/flores-tikal/thumbs/59.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/60.jpg', thumb: 'photos/flores-tikal/thumbs/60.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/61.jpg', thumb: 'photos/flores-tikal/thumbs/61.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/62.jpg', thumb: 'photos/flores-tikal/thumbs/62.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/63.jpg', thumb: 'photos/flores-tikal/thumbs/63.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/64.jpg', thumb: 'photos/flores-tikal/thumbs/64.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/65.jpg', thumb: 'photos/flores-tikal/thumbs/65.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/66.jpg', thumb: 'photos/flores-tikal/thumbs/66.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/67.jpg', thumb: 'photos/flores-tikal/thumbs/67.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/68.jpg', thumb: 'photos/flores-tikal/thumbs/68.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/69.jpg', thumb: 'photos/flores-tikal/thumbs/69.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/70.jpg', thumb: 'photos/flores-tikal/thumbs/70.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/71.jpg', thumb: 'photos/flores-tikal/thumbs/71.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/72.jpg', thumb: 'photos/flores-tikal/thumbs/72.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/73.jpg', thumb: 'photos/flores-tikal/thumbs/73.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/74.jpg', thumb: 'photos/flores-tikal/thumbs/74.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/75.jpg', thumb: 'photos/flores-tikal/thumbs/75.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/76.jpg', thumb: 'photos/flores-tikal/thumbs/76.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/77.jpg', thumb: 'photos/flores-tikal/thumbs/77.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/78.jpg', thumb: 'photos/flores-tikal/thumbs/78.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/79.jpg', thumb: 'photos/flores-tikal/thumbs/79.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/80.jpg', thumb: 'photos/flores-tikal/thumbs/80.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/81.jpg', thumb: 'photos/flores-tikal/thumbs/81.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/82.jpg', thumb: 'photos/flores-tikal/thumbs/82.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/83.jpg', thumb: 'photos/flores-tikal/thumbs/83.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/84.jpg', thumb: 'photos/flores-tikal/thumbs/84.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/85.jpg', thumb: 'photos/flores-tikal/thumbs/85.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/86.jpg', thumb: 'photos/flores-tikal/thumbs/86.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/87.jpg', thumb: 'photos/flores-tikal/thumbs/87.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/88.jpg', thumb: 'photos/flores-tikal/thumbs/88.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/89.jpg', thumb: 'photos/flores-tikal/thumbs/89.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/90.jpg', thumb: 'photos/flores-tikal/thumbs/90.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/91.jpg', thumb: 'photos/flores-tikal/thumbs/91.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/92.jpg', thumb: 'photos/flores-tikal/thumbs/92.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/93.jpg', thumb: 'photos/flores-tikal/thumbs/93.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/94.jpg', thumb: 'photos/flores-tikal/thumbs/94.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/95.jpg', thumb: 'photos/flores-tikal/thumbs/95.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/96.jpg', thumb: 'photos/flores-tikal/thumbs/96.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/97.jpg', thumb: 'photos/flores-tikal/thumbs/97.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/98.jpg', thumb: 'photos/flores-tikal/thumbs/98.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/flores-tikal/99.jpg', thumb: 'photos/flores-tikal/thumbs/99.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
     photos: []
   },
 
   'belize': {
     title: { fr: 'Photos du Belize', en: 'Belize photos', es: 'Fotos de Belice' },
-    // Prêt pour jusqu'à 25 photos : dupliquez/décommentez les lignes ci-dessous,
+    // Prêt pour jusqu'à 99 photos : dupliquez/décommentez les lignes ci-dessous,
     // remplissez src/thumb/alt, et déplacez chaque bloc hors des commentaires
     // (dans le tableau photos: [...]) au fur et à mesure que vous ajoutez des images
     // dans photos/belize/ (grande version) et photos/belize/thumbs/ (miniature 220x160).
@@ -1238,12 +2126,308 @@ const GALLERIES = {
       // { src: 'photos/belize/25.jpg', thumb: 'photos/belize/thumbs/25.jpg',
       //   alt: "",
       //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/26.jpg', thumb: 'photos/belize/thumbs/26.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/27.jpg', thumb: 'photos/belize/thumbs/27.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/28.jpg', thumb: 'photos/belize/thumbs/28.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/29.jpg', thumb: 'photos/belize/thumbs/29.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/30.jpg', thumb: 'photos/belize/thumbs/30.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/31.jpg', thumb: 'photos/belize/thumbs/31.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/32.jpg', thumb: 'photos/belize/thumbs/32.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/33.jpg', thumb: 'photos/belize/thumbs/33.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/34.jpg', thumb: 'photos/belize/thumbs/34.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/35.jpg', thumb: 'photos/belize/thumbs/35.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/36.jpg', thumb: 'photos/belize/thumbs/36.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/37.jpg', thumb: 'photos/belize/thumbs/37.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/38.jpg', thumb: 'photos/belize/thumbs/38.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/39.jpg', thumb: 'photos/belize/thumbs/39.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/40.jpg', thumb: 'photos/belize/thumbs/40.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/41.jpg', thumb: 'photos/belize/thumbs/41.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/42.jpg', thumb: 'photos/belize/thumbs/42.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/43.jpg', thumb: 'photos/belize/thumbs/43.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/44.jpg', thumb: 'photos/belize/thumbs/44.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/45.jpg', thumb: 'photos/belize/thumbs/45.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/46.jpg', thumb: 'photos/belize/thumbs/46.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/47.jpg', thumb: 'photos/belize/thumbs/47.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/48.jpg', thumb: 'photos/belize/thumbs/48.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/49.jpg', thumb: 'photos/belize/thumbs/49.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/50.jpg', thumb: 'photos/belize/thumbs/50.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/51.jpg', thumb: 'photos/belize/thumbs/51.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/52.jpg', thumb: 'photos/belize/thumbs/52.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/53.jpg', thumb: 'photos/belize/thumbs/53.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/54.jpg', thumb: 'photos/belize/thumbs/54.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/55.jpg', thumb: 'photos/belize/thumbs/55.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/56.jpg', thumb: 'photos/belize/thumbs/56.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/57.jpg', thumb: 'photos/belize/thumbs/57.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/58.jpg', thumb: 'photos/belize/thumbs/58.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/59.jpg', thumb: 'photos/belize/thumbs/59.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/60.jpg', thumb: 'photos/belize/thumbs/60.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/61.jpg', thumb: 'photos/belize/thumbs/61.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/62.jpg', thumb: 'photos/belize/thumbs/62.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/63.jpg', thumb: 'photos/belize/thumbs/63.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/64.jpg', thumb: 'photos/belize/thumbs/64.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/65.jpg', thumb: 'photos/belize/thumbs/65.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/66.jpg', thumb: 'photos/belize/thumbs/66.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/67.jpg', thumb: 'photos/belize/thumbs/67.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/68.jpg', thumb: 'photos/belize/thumbs/68.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/69.jpg', thumb: 'photos/belize/thumbs/69.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/70.jpg', thumb: 'photos/belize/thumbs/70.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/71.jpg', thumb: 'photos/belize/thumbs/71.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/72.jpg', thumb: 'photos/belize/thumbs/72.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/73.jpg', thumb: 'photos/belize/thumbs/73.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/74.jpg', thumb: 'photos/belize/thumbs/74.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/75.jpg', thumb: 'photos/belize/thumbs/75.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/76.jpg', thumb: 'photos/belize/thumbs/76.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/77.jpg', thumb: 'photos/belize/thumbs/77.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/78.jpg', thumb: 'photos/belize/thumbs/78.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/79.jpg', thumb: 'photos/belize/thumbs/79.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/80.jpg', thumb: 'photos/belize/thumbs/80.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/81.jpg', thumb: 'photos/belize/thumbs/81.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/82.jpg', thumb: 'photos/belize/thumbs/82.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/83.jpg', thumb: 'photos/belize/thumbs/83.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/84.jpg', thumb: 'photos/belize/thumbs/84.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/85.jpg', thumb: 'photos/belize/thumbs/85.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/86.jpg', thumb: 'photos/belize/thumbs/86.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/87.jpg', thumb: 'photos/belize/thumbs/87.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/88.jpg', thumb: 'photos/belize/thumbs/88.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/89.jpg', thumb: 'photos/belize/thumbs/89.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/90.jpg', thumb: 'photos/belize/thumbs/90.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/91.jpg', thumb: 'photos/belize/thumbs/91.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/92.jpg', thumb: 'photos/belize/thumbs/92.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/93.jpg', thumb: 'photos/belize/thumbs/93.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/94.jpg', thumb: 'photos/belize/thumbs/94.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/95.jpg', thumb: 'photos/belize/thumbs/95.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/96.jpg', thumb: 'photos/belize/thumbs/96.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/97.jpg', thumb: 'photos/belize/thumbs/97.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/98.jpg', thumb: 'photos/belize/thumbs/98.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/belize/99.jpg', thumb: 'photos/belize/thumbs/99.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
     photos: []
   },
 
   'tulum': {
     title: { fr: 'Photos de Tulum', en: 'Tulum photos', es: 'Fotos de Tulum' },
-    // Prêt pour jusqu'à 25 photos : dupliquez/décommentez les lignes ci-dessous,
+    // Prêt pour jusqu'à 99 photos : dupliquez/décommentez les lignes ci-dessous,
     // remplissez src/thumb/alt, et déplacez chaque bloc hors des commentaires
     // (dans le tableau photos: [...]) au fur et à mesure que vous ajoutez des images
     // dans photos/tulum/ (grande version) et photos/tulum/thumbs/ (miniature 220x160).
@@ -1346,12 +2530,308 @@ const GALLERIES = {
       // { src: 'photos/tulum/25.jpg', thumb: 'photos/tulum/thumbs/25.jpg',
       //   alt: "",
       //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/26.jpg', thumb: 'photos/tulum/thumbs/26.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/27.jpg', thumb: 'photos/tulum/thumbs/27.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/28.jpg', thumb: 'photos/tulum/thumbs/28.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/29.jpg', thumb: 'photos/tulum/thumbs/29.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/30.jpg', thumb: 'photos/tulum/thumbs/30.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/31.jpg', thumb: 'photos/tulum/thumbs/31.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/32.jpg', thumb: 'photos/tulum/thumbs/32.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/33.jpg', thumb: 'photos/tulum/thumbs/33.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/34.jpg', thumb: 'photos/tulum/thumbs/34.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/35.jpg', thumb: 'photos/tulum/thumbs/35.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/36.jpg', thumb: 'photos/tulum/thumbs/36.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/37.jpg', thumb: 'photos/tulum/thumbs/37.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/38.jpg', thumb: 'photos/tulum/thumbs/38.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/39.jpg', thumb: 'photos/tulum/thumbs/39.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/40.jpg', thumb: 'photos/tulum/thumbs/40.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/41.jpg', thumb: 'photos/tulum/thumbs/41.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/42.jpg', thumb: 'photos/tulum/thumbs/42.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/43.jpg', thumb: 'photos/tulum/thumbs/43.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/44.jpg', thumb: 'photos/tulum/thumbs/44.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/45.jpg', thumb: 'photos/tulum/thumbs/45.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/46.jpg', thumb: 'photos/tulum/thumbs/46.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/47.jpg', thumb: 'photos/tulum/thumbs/47.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/48.jpg', thumb: 'photos/tulum/thumbs/48.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/49.jpg', thumb: 'photos/tulum/thumbs/49.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/50.jpg', thumb: 'photos/tulum/thumbs/50.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/51.jpg', thumb: 'photos/tulum/thumbs/51.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/52.jpg', thumb: 'photos/tulum/thumbs/52.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/53.jpg', thumb: 'photos/tulum/thumbs/53.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/54.jpg', thumb: 'photos/tulum/thumbs/54.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/55.jpg', thumb: 'photos/tulum/thumbs/55.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/56.jpg', thumb: 'photos/tulum/thumbs/56.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/57.jpg', thumb: 'photos/tulum/thumbs/57.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/58.jpg', thumb: 'photos/tulum/thumbs/58.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/59.jpg', thumb: 'photos/tulum/thumbs/59.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/60.jpg', thumb: 'photos/tulum/thumbs/60.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/61.jpg', thumb: 'photos/tulum/thumbs/61.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/62.jpg', thumb: 'photos/tulum/thumbs/62.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/63.jpg', thumb: 'photos/tulum/thumbs/63.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/64.jpg', thumb: 'photos/tulum/thumbs/64.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/65.jpg', thumb: 'photos/tulum/thumbs/65.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/66.jpg', thumb: 'photos/tulum/thumbs/66.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/67.jpg', thumb: 'photos/tulum/thumbs/67.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/68.jpg', thumb: 'photos/tulum/thumbs/68.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/69.jpg', thumb: 'photos/tulum/thumbs/69.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/70.jpg', thumb: 'photos/tulum/thumbs/70.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/71.jpg', thumb: 'photos/tulum/thumbs/71.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/72.jpg', thumb: 'photos/tulum/thumbs/72.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/73.jpg', thumb: 'photos/tulum/thumbs/73.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/74.jpg', thumb: 'photos/tulum/thumbs/74.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/75.jpg', thumb: 'photos/tulum/thumbs/75.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/76.jpg', thumb: 'photos/tulum/thumbs/76.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/77.jpg', thumb: 'photos/tulum/thumbs/77.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/78.jpg', thumb: 'photos/tulum/thumbs/78.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/79.jpg', thumb: 'photos/tulum/thumbs/79.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/80.jpg', thumb: 'photos/tulum/thumbs/80.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/81.jpg', thumb: 'photos/tulum/thumbs/81.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/82.jpg', thumb: 'photos/tulum/thumbs/82.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/83.jpg', thumb: 'photos/tulum/thumbs/83.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/84.jpg', thumb: 'photos/tulum/thumbs/84.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/85.jpg', thumb: 'photos/tulum/thumbs/85.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/86.jpg', thumb: 'photos/tulum/thumbs/86.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/87.jpg', thumb: 'photos/tulum/thumbs/87.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/88.jpg', thumb: 'photos/tulum/thumbs/88.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/89.jpg', thumb: 'photos/tulum/thumbs/89.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/90.jpg', thumb: 'photos/tulum/thumbs/90.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/91.jpg', thumb: 'photos/tulum/thumbs/91.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/92.jpg', thumb: 'photos/tulum/thumbs/92.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/93.jpg', thumb: 'photos/tulum/thumbs/93.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/94.jpg', thumb: 'photos/tulum/thumbs/94.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/95.jpg', thumb: 'photos/tulum/thumbs/95.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/96.jpg', thumb: 'photos/tulum/thumbs/96.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/97.jpg', thumb: 'photos/tulum/thumbs/97.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/98.jpg', thumb: 'photos/tulum/thumbs/98.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/tulum/99.jpg', thumb: 'photos/tulum/thumbs/99.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
     photos: []
   },
 
   'cancun': {
     title: { fr: 'Photos de Cancún', en: 'Cancún photos', es: 'Fotos de Cancún' },
-    // Prêt pour jusqu'à 25 photos : dupliquez/décommentez les lignes ci-dessous,
+    // Prêt pour jusqu'à 99 photos : dupliquez/décommentez les lignes ci-dessous,
     // remplissez src/thumb/alt, et déplacez chaque bloc hors des commentaires
     // (dans le tableau photos: [...]) au fur et à mesure que vous ajoutez des images
     // dans photos/cancun/ (grande version) et photos/cancun/thumbs/ (miniature 220x160).
@@ -1452,6 +2932,302 @@ const GALLERIES = {
       //   caption: { fr: '', en: '', es: '' } },
 
       // { src: 'photos/cancun/25.jpg', thumb: 'photos/cancun/thumbs/25.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/26.jpg', thumb: 'photos/cancun/thumbs/26.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/27.jpg', thumb: 'photos/cancun/thumbs/27.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/28.jpg', thumb: 'photos/cancun/thumbs/28.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/29.jpg', thumb: 'photos/cancun/thumbs/29.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/30.jpg', thumb: 'photos/cancun/thumbs/30.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/31.jpg', thumb: 'photos/cancun/thumbs/31.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/32.jpg', thumb: 'photos/cancun/thumbs/32.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/33.jpg', thumb: 'photos/cancun/thumbs/33.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/34.jpg', thumb: 'photos/cancun/thumbs/34.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/35.jpg', thumb: 'photos/cancun/thumbs/35.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/36.jpg', thumb: 'photos/cancun/thumbs/36.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/37.jpg', thumb: 'photos/cancun/thumbs/37.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/38.jpg', thumb: 'photos/cancun/thumbs/38.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/39.jpg', thumb: 'photos/cancun/thumbs/39.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/40.jpg', thumb: 'photos/cancun/thumbs/40.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/41.jpg', thumb: 'photos/cancun/thumbs/41.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/42.jpg', thumb: 'photos/cancun/thumbs/42.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/43.jpg', thumb: 'photos/cancun/thumbs/43.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/44.jpg', thumb: 'photos/cancun/thumbs/44.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/45.jpg', thumb: 'photos/cancun/thumbs/45.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/46.jpg', thumb: 'photos/cancun/thumbs/46.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/47.jpg', thumb: 'photos/cancun/thumbs/47.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/48.jpg', thumb: 'photos/cancun/thumbs/48.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/49.jpg', thumb: 'photos/cancun/thumbs/49.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/50.jpg', thumb: 'photos/cancun/thumbs/50.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/51.jpg', thumb: 'photos/cancun/thumbs/51.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/52.jpg', thumb: 'photos/cancun/thumbs/52.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/53.jpg', thumb: 'photos/cancun/thumbs/53.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/54.jpg', thumb: 'photos/cancun/thumbs/54.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/55.jpg', thumb: 'photos/cancun/thumbs/55.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/56.jpg', thumb: 'photos/cancun/thumbs/56.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/57.jpg', thumb: 'photos/cancun/thumbs/57.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/58.jpg', thumb: 'photos/cancun/thumbs/58.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/59.jpg', thumb: 'photos/cancun/thumbs/59.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/60.jpg', thumb: 'photos/cancun/thumbs/60.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/61.jpg', thumb: 'photos/cancun/thumbs/61.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/62.jpg', thumb: 'photos/cancun/thumbs/62.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/63.jpg', thumb: 'photos/cancun/thumbs/63.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/64.jpg', thumb: 'photos/cancun/thumbs/64.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/65.jpg', thumb: 'photos/cancun/thumbs/65.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/66.jpg', thumb: 'photos/cancun/thumbs/66.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/67.jpg', thumb: 'photos/cancun/thumbs/67.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/68.jpg', thumb: 'photos/cancun/thumbs/68.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/69.jpg', thumb: 'photos/cancun/thumbs/69.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/70.jpg', thumb: 'photos/cancun/thumbs/70.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/71.jpg', thumb: 'photos/cancun/thumbs/71.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/72.jpg', thumb: 'photos/cancun/thumbs/72.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/73.jpg', thumb: 'photos/cancun/thumbs/73.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/74.jpg', thumb: 'photos/cancun/thumbs/74.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/75.jpg', thumb: 'photos/cancun/thumbs/75.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/76.jpg', thumb: 'photos/cancun/thumbs/76.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/77.jpg', thumb: 'photos/cancun/thumbs/77.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/78.jpg', thumb: 'photos/cancun/thumbs/78.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/79.jpg', thumb: 'photos/cancun/thumbs/79.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/80.jpg', thumb: 'photos/cancun/thumbs/80.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/81.jpg', thumb: 'photos/cancun/thumbs/81.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/82.jpg', thumb: 'photos/cancun/thumbs/82.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/83.jpg', thumb: 'photos/cancun/thumbs/83.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/84.jpg', thumb: 'photos/cancun/thumbs/84.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/85.jpg', thumb: 'photos/cancun/thumbs/85.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/86.jpg', thumb: 'photos/cancun/thumbs/86.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/87.jpg', thumb: 'photos/cancun/thumbs/87.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/88.jpg', thumb: 'photos/cancun/thumbs/88.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/89.jpg', thumb: 'photos/cancun/thumbs/89.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/90.jpg', thumb: 'photos/cancun/thumbs/90.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/91.jpg', thumb: 'photos/cancun/thumbs/91.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/92.jpg', thumb: 'photos/cancun/thumbs/92.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/93.jpg', thumb: 'photos/cancun/thumbs/93.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/94.jpg', thumb: 'photos/cancun/thumbs/94.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/95.jpg', thumb: 'photos/cancun/thumbs/95.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/96.jpg', thumb: 'photos/cancun/thumbs/96.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/97.jpg', thumb: 'photos/cancun/thumbs/97.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/98.jpg', thumb: 'photos/cancun/thumbs/98.jpg',
+      //   alt: "",
+      //   caption: { fr: '', en: '', es: '' } },
+
+      // { src: 'photos/cancun/99.jpg', thumb: 'photos/cancun/thumbs/99.jpg',
       //   alt: "",
       //   caption: { fr: '', en: '', es: '' } },
     photos: []
