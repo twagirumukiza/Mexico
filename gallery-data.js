@@ -1306,13 +1306,13 @@ const GALLERIES = {
          alt: "",
          caption: { fr: '', en: '', es: '' } },
 
-      { src: 'photos/palenque/22.jpg', thumb: 'photos/palenque/thumbs/22.jpg',
-        alt: "",
-        caption: { fr: '', en: '', es: '' } },
+      //{ src: 'photos/palenque/22.jpg', thumb: 'photos/palenque/thumbs/22.jpg',
+     //   alt: "",
+       // caption: { fr: '', en: '', es: '' } },
 
-       { src: 'photos/palenque/23.jpg', thumb: 'photos/palenque/thumbs/23.jpg',
-         alt: "",
-         caption: { fr: '', en: '', es: '' } },
+       //{ src: 'photos/palenque/23.jpg', thumb: 'photos/palenque/thumbs/23.jpg',
+       //  alt: "",
+       //  caption: { fr: '', en: '', es: '' } },
 
       // { src: 'photos/palenque/24.jpg', thumb: 'photos/palenque/thumbs/24.jpg',
       //   alt: "",
