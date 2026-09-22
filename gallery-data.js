@@ -957,8 +957,8 @@ const GALLERIES = {
          caption: { fr: '', en: '', es: '' } },
 
       { src: 'photos/san-cristobal/36.jpg', thumb: 'photos/san-cristobal/thumbs/36.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       alt: "",
+      caption: { fr: '', en: '', es: '' } },
 
       // { src: 'photos/san-cristobal/37.jpg', thumb: 'photos/san-cristobal/thumbs/37.jpg',
       //   alt: "",
