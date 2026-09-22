@@ -1620,6 +1620,7 @@ const GALLERIES = {
 
   'flores-tikal': {
     title: { fr: 'Photos de Flores & Tikal', en: 'Flores & Tikal photos', es: 'Fotos de Flores y Tikal' },
+     photos: [
     // Prêt pour jusqu'à 99 photos : dupliquez/décommentez les lignes ci-dessous,
     // remplissez src/thumb/alt, et déplacez chaque bloc hors des commentaires
     // (dans le tableau photos: [...]) au fur et à mesure que vous ajoutez des images
@@ -2019,7 +2020,7 @@ const GALLERIES = {
       // { src: 'photos/flores-tikal/99.jpg', thumb: 'photos/flores-tikal/thumbs/99.jpg',
       //   alt: "",
       //   caption: { fr: '', en: '', es: '' } },
-    photos: []
+    ]
   },
 
   'belize': {
