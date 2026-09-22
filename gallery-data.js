@@ -1216,101 +1216,103 @@ const GALLERIES = {
 
   'palenque': {
     title: { fr: 'Photos de Palenque', en: 'Palenque photos', es: 'Fotos de Palenque' },
+     photos: [
     // Prêt pour jusqu'à 99 photos : dupliquez/décommentez les lignes ci-dessous,
     // remplissez src/thumb/alt, et déplacez chaque bloc hors des commentaires
     // (dans le tableau photos: [...]) au fur et à mesure que vous ajoutez des images
     // dans photos/palenque/ (grande version) et photos/palenque/thumbs/ (miniature 220x160).
-      // { src: 'photos/palenque/01.jpg', thumb: 'photos/palenque/thumbs/01.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/palenque/01.jpg', thumb: 'photos/palenque/thumbs/01.jpg',
+        alt: "",
+         caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/palenque/02.jpg', thumb: 'photos/palenque/thumbs/02.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/palenque/02.jpg', thumb: 'photos/palenque/thumbs/02.jpg',
+        alt: "",
+         caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/palenque/03.jpg', thumb: 'photos/palenque/thumbs/03.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+      { src: 'photos/palenque/03.jpg', thumb: 'photos/palenque/thumbs/03.jpg',
+       alt: "",
+        caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/palenque/04.jpg', thumb: 'photos/palenque/thumbs/04.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/palenque/04.jpg', thumb: 'photos/palenque/thumbs/04.jpg',
+        alt: "",
+         caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/palenque/05.jpg', thumb: 'photos/palenque/thumbs/05.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/palenque/05.jpg', thumb: 'photos/palenque/thumbs/05.jpg',
+         alt: "",
+        caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/palenque/06.jpg', thumb: 'photos/palenque/thumbs/06.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+      { src: 'photos/palenque/06.jpg', thumb: 'photos/palenque/thumbs/06.jpg',
+        alt: "",
+        caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/palenque/07.jpg', thumb: 'photos/palenque/thumbs/07.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/palenque/07.jpg', thumb: 'photos/palenque/thumbs/07.jpg',
+         alt: "",
+         caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/palenque/08.jpg', thumb: 'photos/palenque/thumbs/08.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+      { src: 'photos/palenque/08.jpg', thumb: 'photos/palenque/thumbs/08.jpg',
+         alt: "",
+        caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/palenque/09.jpg', thumb: 'photos/palenque/thumbs/09.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/palenque/09.jpg', thumb: 'photos/palenque/thumbs/09.jpg',
+        alt: "",
+         caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/palenque/10.jpg', thumb: 'photos/palenque/thumbs/10.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+      { src: 'photos/palenque/10.jpg', thumb: 'photos/palenque/thumbs/10.jpg',
+       alt: "",
+         caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/palenque/11.jpg', thumb: 'photos/palenque/thumbs/11.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+    { src: 'photos/palenque/11.jpg', thumb: 'photos/palenque/thumbs/11.jpg',
+         alt: "",
+        caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/palenque/12.jpg', thumb: 'photos/palenque/thumbs/12.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/palenque/12.jpg', thumb: 'photos/palenque/thumbs/12.jpg',
+        alt: "",
+        caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/palenque/13.jpg', thumb: 'photos/palenque/thumbs/13.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/palenque/13.jpg', thumb: 'photos/palenque/thumbs/13.jpg',
+        alt: "",
+         caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/palenque/14.jpg', thumb: 'photos/palenque/thumbs/14.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+      { src: 'photos/palenque/14.jpg', thumb: 'photos/palenque/thumbs/14.jpg',
+         alt: "",
+        caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/palenque/15.jpg', thumb: 'photos/palenque/thumbs/15.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+      
+      { src: 'photos/palenque/15.jpg', thumb: 'photos/palenque/thumbs/15.jpg',
+         alt: "",
+        caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/palenque/16.jpg', thumb: 'photos/palenque/thumbs/16.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/palenque/16.jpg', thumb: 'photos/palenque/thumbs/16.jpg',
+        alt: "",
+         caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/palenque/17.jpg', thumb: 'photos/palenque/thumbs/17.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/palenque/17.jpg', thumb: 'photos/palenque/thumbs/17.jpg',
+        alt: "",
+       caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/palenque/18.jpg', thumb: 'photos/palenque/thumbs/18.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/palenque/18.jpg', thumb: 'photos/palenque/thumbs/18.jpg',
+        alt: "",
+        caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/palenque/19.jpg', thumb: 'photos/palenque/thumbs/19.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/palenque/19.jpg', thumb: 'photos/palenque/thumbs/19.jpg',
+         alt: "",
+        caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/palenque/20.jpg', thumb: 'photos/palenque/thumbs/20.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/palenque/20.jpg', thumb: 'photos/palenque/thumbs/20.jpg',
+        alt: "",
+         caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/palenque/21.jpg', thumb: 'photos/palenque/thumbs/21.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/palenque/21.jpg', thumb: 'photos/palenque/thumbs/21.jpg',
+         alt: "",
+         caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/palenque/22.jpg', thumb: 'photos/palenque/thumbs/22.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+      { src: 'photos/palenque/22.jpg', thumb: 'photos/palenque/thumbs/22.jpg',
+        alt: "",
+        caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/palenque/23.jpg', thumb: 'photos/palenque/thumbs/23.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/palenque/23.jpg', thumb: 'photos/palenque/thumbs/23.jpg',
+         alt: "",
+         caption: { fr: '', en: '', es: '' } },
 
       // { src: 'photos/palenque/24.jpg', thumb: 'photos/palenque/thumbs/24.jpg',
       //   alt: "",
@@ -1615,7 +1617,7 @@ const GALLERIES = {
       // { src: 'photos/palenque/99.jpg', thumb: 'photos/palenque/thumbs/99.jpg',
       //   alt: "",
       //   caption: { fr: '', en: '', es: '' } },
-    photos: []
+    ]
   },
 
   'flores-tikal': {
