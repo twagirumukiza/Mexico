@@ -110,7 +110,7 @@
     ub(m, 130, 10, 46, 30, 0, 4, T(STONE, 0.95));
     var nte = pyramid(m, 145, 10, [22, 17], [18, 14], [3.2, 3], 12, 10, 2, STONE);
     for (i = 0; i < nte.length; i++) stair(m, nte[i], 'S', 5, 4, [0.5, 0.45, 0.38], [0.68, 0.62, 0.5]);
-    frustum(m, 118, -8, 8, 26, 3, 26, 0, 4.5, T(STONE, 1.05), 2); frustum(m, 118, 22, 8, 26, 3, 26, 0, 4.5, T(STONE, 1.05), 2); // jeu de balle
+    frustum(m, -8, -118, 8, 26, 3, 26, 0, 4.5, T(STONE, 1.05), 2); frustum(m, 22, -118, 8, 26, 3, 26, 0, 4.5, T(STONE, 1.05), 2); // jeu de balle (cx=v, cz=-u)
 
     /* --- Temple annexe recouvert de jungle --- */
     ub(m, -160, -95, 26, 22, 0, 3.5, T([0.5, 0.56, 0.4], 0.9));
