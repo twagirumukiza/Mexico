@@ -46,11 +46,7 @@ const translations = {
     "gallery.palenque.btn": "Voir les photos de Palenque",
 
      "t3.tikal.btn": "Explorer Tikal en 3D",
-    "t3.tulum.btn": "Explorer Tulum en 3D"
-
-
-     
-     
+    "t3.tulum.btn": "Explorer Tulum en 3D",
     "gallery.florestikal.btn": "Voir les photos de Flores & Tikal",
     "gallery.belize.btn": "Voir les photos du Belize",
     "gallery.tulum.btn": "Voir les photos de Tulum",
@@ -158,7 +154,7 @@ const translations = {
     "t3.btn": "Explore Teotihuacán in 3D",
     "t3.montealban.btn": "Explore Monte Albán in 3D",
      "t3.palenque.btn": "Explore Palenque in 3D",
-      "t3.tikal.btn": "Explore Tikal 3D",
+      "t3.tikal.btn": "Explore Tikal in 3D",
          "t3.tulum.btn": "Explore Tulum in 3D",
 
 
@@ -275,8 +271,8 @@ const translations = {
     "t3.btn": "Explorar Teotihuacán en 3D",
     "t3.montealban.btn": "Explorar Monte Albán en 3D",
      "t3.palenque.btn": "Explorar Palenque en 3D",
-          "t3.tikal.btn": "Explorar Tikal  en 3D",: 
-"t3.tulum.btn": "Explorar Tulum en 3D",
+          "t3.tikal.btn": "Explorar Tikal en 3D",
+    "t3.tulum.btn": "Explorar Tulum en 3D",
     "gallery.teotitlan.btn": "Ver las fotos de Teotitlán del Valle",
     "gallery.puertoescondido.btn": "Ver las fotos de Puerto Escondido",
     "gallery.mazunte.btn": "Ver las fotos de Mazunte",
