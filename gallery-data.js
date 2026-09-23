@@ -2045,61 +2045,62 @@ const GALLERIES = {
 
   'belize': {
     title: { fr: 'Photos du Belize', en: 'Belize photos', es: 'Fotos de Belice' },
-    // Prêt pour jusqu'à 99 photos : dupliquez/décommentez les lignes ci-dessous,
+ photos: [
+     // Prêt pour jusqu'à 99 photos : dupliquez/décommentez les lignes ci-dessous,
     // remplissez src/thumb/alt, et déplacez chaque bloc hors des commentaires
     // (dans le tableau photos: [...]) au fur et à mesure que vous ajoutez des images
     // dans photos/belize/ (grande version) et photos/belize/thumbs/ (miniature 220x160).
-      // { src: 'photos/belize/01.jpg', thumb: 'photos/belize/thumbs/01.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/belize/01.jpg', thumb: 'photos/belize/thumbs/01.jpg',
+         alt: "",
+         caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/belize/02.jpg', thumb: 'photos/belize/thumbs/02.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/belize/02.jpg', thumb: 'photos/belize/thumbs/02.jpg',
+         alt: "",
+         caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/belize/03.jpg', thumb: 'photos/belize/thumbs/03.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/belize/03.jpg', thumb: 'photos/belize/thumbs/03.jpg',
+         alt: "",
+         caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/belize/04.jpg', thumb: 'photos/belize/thumbs/04.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/belize/04.jpg', thumb: 'photos/belize/thumbs/04.jpg',
+         alt: "",
+        caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/belize/05.jpg', thumb: 'photos/belize/thumbs/05.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/belize/05.jpg', thumb: 'photos/belize/thumbs/05.jpg',
+        alt: "",
+         caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/belize/06.jpg', thumb: 'photos/belize/thumbs/06.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/belize/06.jpg', thumb: 'photos/belize/thumbs/06.jpg',
+         alt: "",
+        caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/belize/07.jpg', thumb: 'photos/belize/thumbs/07.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/belize/07.jpg', thumb: 'photos/belize/thumbs/07.jpg',
+         alt: "",
+        caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/belize/08.jpg', thumb: 'photos/belize/thumbs/08.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/belize/08.jpg', thumb: 'photos/belize/thumbs/08.jpg',
+         alt: "",
+         caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/belize/09.jpg', thumb: 'photos/belize/thumbs/09.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+      { src: 'photos/belize/09.jpg', thumb: 'photos/belize/thumbs/09.jpg',
+         alt: "",
+         caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/belize/10.jpg', thumb: 'photos/belize/thumbs/10.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+      { src: 'photos/belize/10.jpg', thumb: 'photos/belize/thumbs/10.jpg',
+         alt: "",
+       caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/belize/11.jpg', thumb: 'photos/belize/thumbs/11.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+      { src: 'photos/belize/11.jpg', thumb: 'photos/belize/thumbs/11.jpg',
+         alt: "",
+         caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/belize/12.jpg', thumb: 'photos/belize/thumbs/12.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/belize/12.jpg', thumb: 'photos/belize/thumbs/12.jpg',
+    alt: "",
+        caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/belize/13.jpg', thumb: 'photos/belize/thumbs/13.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/belize/13.jpg', thumb: 'photos/belize/thumbs/13.jpg',
+        alt: "",
+         caption: { fr: '', en: '', es: '' } },
 
       // { src: 'photos/belize/14.jpg', thumb: 'photos/belize/thumbs/14.jpg',
       //   alt: "",
@@ -2444,7 +2445,7 @@ const GALLERIES = {
       // { src: 'photos/belize/99.jpg', thumb: 'photos/belize/thumbs/99.jpg',
       //   alt: "",
       //   caption: { fr: '', en: '', es: '' } },
-    photos: []
+    ]
   },
 
   'tulum': {
