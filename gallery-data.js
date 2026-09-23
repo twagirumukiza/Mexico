@@ -2855,97 +2855,98 @@ const GALLERIES = {
 
   'cancun': {
     title: { fr: 'Photos de Cancún', en: 'Cancún photos', es: 'Fotos de Cancún' },
+     photos: [
     // Prêt pour jusqu'à 99 photos : dupliquez/décommentez les lignes ci-dessous,
     // remplissez src/thumb/alt, et déplacez chaque bloc hors des commentaires
     // (dans le tableau photos: [...]) au fur et à mesure que vous ajoutez des images
     // dans photos/cancun/ (grande version) et photos/cancun/thumbs/ (miniature 220x160).
-      // { src: 'photos/cancun/01.jpg', thumb: 'photos/cancun/thumbs/01.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/cancun/01.jpg', thumb: 'photos/cancun/thumbs/01.jpg',
+       alt: "",
+        caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/cancun/02.jpg', thumb: 'photos/cancun/thumbs/02.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/cancun/02.jpg', thumb: 'photos/cancun/thumbs/02.jpg',
+        alt: "",
+       caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/cancun/03.jpg', thumb: 'photos/cancun/thumbs/03.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+      { src: 'photos/cancun/03.jpg', thumb: 'photos/cancun/thumbs/03.jpg',
+       alt: "",
+      caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/cancun/04.jpg', thumb: 'photos/cancun/thumbs/04.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+      { src: 'photos/cancun/04.jpg', thumb: 'photos/cancun/thumbs/04.jpg',
+        alt: "",
+       caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/cancun/05.jpg', thumb: 'photos/cancun/thumbs/05.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+      { src: 'photos/cancun/05.jpg', thumb: 'photos/cancun/thumbs/05.jpg',
+        alt: "",
+        caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/cancun/06.jpg', thumb: 'photos/cancun/thumbs/06.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/cancun/06.jpg', thumb: 'photos/cancun/thumbs/06.jpg',
+      alt: "",
+        caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/cancun/07.jpg', thumb: 'photos/cancun/thumbs/07.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+      { src: 'photos/cancun/07.jpg', thumb: 'photos/cancun/thumbs/07.jpg',
+        alt: "",
+        caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/cancun/08.jpg', thumb: 'photos/cancun/thumbs/08.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/cancun/08.jpg', thumb: 'photos/cancun/thumbs/08.jpg',
+         alt: "",
+         caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/cancun/09.jpg', thumb: 'photos/cancun/thumbs/09.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+     { src: 'photos/cancun/09.jpg', thumb: 'photos/cancun/thumbs/09.jpg',
+       alt: "",
+      caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/cancun/10.jpg', thumb: 'photos/cancun/thumbs/10.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+      { src: 'photos/cancun/10.jpg', thumb: 'photos/cancun/thumbs/10.jpg',
+       alt: "",
+       caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/cancun/11.jpg', thumb: 'photos/cancun/thumbs/11.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/cancun/11.jpg', thumb: 'photos/cancun/thumbs/11.jpg',
+         alt: "",
+         caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/cancun/12.jpg', thumb: 'photos/cancun/thumbs/12.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/cancun/12.jpg', thumb: 'photos/cancun/thumbs/12.jpg',
+        alt: "",
+         caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/cancun/13.jpg', thumb: 'photos/cancun/thumbs/13.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+      { src: 'photos/cancun/13.jpg', thumb: 'photos/cancun/thumbs/13.jpg',
+      alt: "",
+        caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/cancun/14.jpg', thumb: 'photos/cancun/thumbs/14.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/cancun/14.jpg', thumb: 'photos/cancun/thumbs/14.jpg',
+        alt: "",
+         caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/cancun/15.jpg', thumb: 'photos/cancun/thumbs/15.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+      { src: 'photos/cancun/15.jpg', thumb: 'photos/cancun/thumbs/15.jpg',
+        alt: "",
+        caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/cancun/16.jpg', thumb: 'photos/cancun/thumbs/16.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+      { src: 'photos/cancun/16.jpg', thumb: 'photos/cancun/thumbs/16.jpg',
+        alt: "",
+        caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/cancun/17.jpg', thumb: 'photos/cancun/thumbs/17.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+    { src: 'photos/cancun/17.jpg', thumb: 'photos/cancun/thumbs/17.jpg',
+        alt: "",
+         caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/cancun/18.jpg', thumb: 'photos/cancun/thumbs/18.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+       { src: 'photos/cancun/18.jpg', thumb: 'photos/cancun/thumbs/18.jpg',
+        alt: "",
+        caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/cancun/19.jpg', thumb: 'photos/cancun/thumbs/19.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+    { src: 'photos/cancun/19.jpg', thumb: 'photos/cancun/thumbs/19.jpg',
+         alt: "",
+        caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/cancun/20.jpg', thumb: 'photos/cancun/thumbs/20.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+      { src: 'photos/cancun/20.jpg', thumb: 'photos/cancun/thumbs/20.jpg',
+        alt: "",
+        caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/cancun/21.jpg', thumb: 'photos/cancun/thumbs/21.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+      { src: 'photos/cancun/21.jpg', thumb: 'photos/cancun/thumbs/21.jpg',
+        alt: "",
+    caption: { fr: '', en: '', es: '' } },
 
-      // { src: 'photos/cancun/22.jpg', thumb: 'photos/cancun/thumbs/22.jpg',
-      //   alt: "",
-      //   caption: { fr: '', en: '', es: '' } },
+      { src: 'photos/cancun/22.jpg', thumb: 'photos/cancun/thumbs/22.jpg',
+        alt: "",
+     caption: { fr: '', en: '', es: '' } },
 
       // { src: 'photos/cancun/23.jpg', thumb: 'photos/cancun/thumbs/23.jpg',
       //   alt: "",
@@ -3254,7 +3255,7 @@ const GALLERIES = {
       // { src: 'photos/cancun/99.jpg', thumb: 'photos/cancun/thumbs/99.jpg',
       //   alt: "",
       //   caption: { fr: '', en: '', es: '' } },
-    photos: []
+    ]
   }
 
 };
