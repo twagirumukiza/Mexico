@@ -1675,7 +1675,7 @@ const GALLERIES = {
 
        { src: 'photos/flores-tikal/08.jpg', thumb: 'photos/flores-tikal/thumbs/08.jpg',
          alt: "",
-      /  caption: { fr: '', en: '', es: '' } },
+        caption: { fr: '', en: '', es: '' } },
 
     { src: 'photos/flores-tikal/09.jpg', thumb: 'photos/flores-tikal/thumbs/09.jpg',
         alt: "",
