@@ -2850,7 +2850,7 @@ const GALLERIES = {
       // { src: 'photos/tulum/99.jpg', thumb: 'photos/tulum/thumbs/99.jpg',
       //   alt: "",
       //   caption: { fr: '', en: '', es: '' } },
-    photos: []
+    ]
   },
 
   'cancun': {
