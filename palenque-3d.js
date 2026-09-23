@@ -145,10 +145,10 @@
       cone(m, av, r2 * 0.7, -au, r2 * 1.1, r2 * 1.5, gcol2, 6);
       placed++;
     }
-    // collines boisées environnantes (la jungle du Chiapas monte de tous côtés)
+    // collines boisées environnantes (arrière-plan lointain, hors du site)
     var hr = mulberry(2608);
-    for (i = 0; i < 14; i++) { var a = i / 14 * 6.2832 + hr() * 0.4, dist = 700 + hr() * 500;
-      hill(m, Math.cos(a) * dist, -Math.sin(a) * dist, 900 + hr() * 700, 260 + hr() * 260, [0.24, 0.42, 0.24], 400 + i); }
+    for (i = 0; i < 14; i++) { var a = i / 14 * 6.2832 + hr() * 0.4, dist = 2700 + hr() * 900;
+      hill(m, Math.cos(a) * dist, -Math.sin(a) * dist, 480 + hr() * 380, 190 + hr() * 200, [0.24, 0.42, 0.24], 400 + i); }
 
     return K.end(m);
   }
