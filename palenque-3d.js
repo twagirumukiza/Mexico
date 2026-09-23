@@ -116,16 +116,33 @@
     ub(m, -160, -95, 26, 22, 0, 3.5, T([0.5, 0.56, 0.4], 0.9));
     ub(m, -160, -95, 12, 9, 3.5, 8, T(SAND, 0.9), T(SAND, 0.85));
 
-    /* --- Jungle : arbres denses --- */
+    /* --- Jungle : clairière centrale dégagée, forêt dense en périphérie --- */
+    var CORE = [-120, 165, -125, 175];      // cœur archéologique : Palacio, Inscripciones, Croix, Grupo Norte
+    var ANNEXE_CLR = [-185, -130, -125, -65]; // petite clairière autour du temple annexe
+    function inBox(u, v, b) { return u > b[0] && u < b[1] && v > b[2] && v < b[3]; }
+
+    // forêt dense : uniquement hors des clairières
     var placed = 0, tries = 0;
-    while (placed < 700 && tries < 9000) {
+    while (placed < 420 && tries < 9000) {
       tries++;
       var tu = -260 + rnd() * 520, tv = -260 + rnd() * 520;
-      if (inExcl(tu, tv)) continue;
-      if (Math.abs(tv - 55) < 10 && tu > -260 && tu < 45) continue;   // laisse le lit de la rivière dégagé
+      if (inBox(tu, tv, CORE) || inBox(tu, tv, ANNEXE_CLR)) continue;
+      if (Math.abs(tv - 55) < 12 && tu > -260 && tu < 45) continue;   // laisse le lit de la rivière dégagé
       var r = 3 + rnd() * 4.5, gcol = [0.22 + rnd() * 0.14, 0.4 + rnd() * 0.18, 0.18 + rnd() * 0.1];
       box(m, tv - 0.3, tv + 0.3, 0, r * 0.9, -tu - 0.3, -tu + 0.3, [0.35, 0.26, 0.18], [0.35, 0.26, 0.18]);
       cone(m, tv, r * 0.7, -tu, r * 1.2, r * 1.7, gcol, 6);
+      placed++;
+    }
+    // arbres isolés dans la clairière (à bonne distance des édifices)
+    placed = 0; tries = 0;
+    while (placed < 30 && tries < 2000) {
+      tries++;
+      var au = -110 + rnd() * 260, av = -110 + rnd() * 270;
+      if (inExcl(au, av)) continue;
+      if (!inBox(au, av, CORE) && !inBox(au, av, ANNEXE_CLR)) continue;
+      var r2 = 2 + rnd() * 1.8, gcol2 = [0.24 + rnd() * 0.12, 0.42 + rnd() * 0.14, 0.2 + rnd() * 0.08];
+      box(m, av - 0.25, av + 0.25, 0, r2 * 0.9, -au - 0.25, -au + 0.25, [0.35, 0.26, 0.18], [0.35, 0.26, 0.18]);
+      cone(m, av, r2 * 0.7, -au, r2 * 1.1, r2 * 1.5, gcol2, 6);
       placed++;
     }
     // collines boisées environnantes (la jungle du Chiapas monte de tous côtés)
