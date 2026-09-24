@@ -156,7 +156,7 @@
   }
 
   Site3D.register('tikal', {
-    gid: 'tikal', axisDeg: 0, sky: [0.58, 0.76, 0.86],
+    gid: 'flores-tikal', axisDeg: 0, sky: [0.58, 0.76, 0.86],
     text: { title: { fr: 'Tikal en 3D', en: 'Tikal in 3D', es: 'Tikal en 3D' } },
     mon: MON, views: VIEWS, initial: 'overview',
     viewButtons: [
