@@ -427,7 +427,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Theme
 function initTheme() {
   const btn = document.getElementById('theme-toggle');
-  const saved = localStorage.getItem('theme') || 'dark';
+  const saved = localStorage.getItem('theme') || 'light';
   setTheme(saved);
 
   btn.addEventListener('click', () => {

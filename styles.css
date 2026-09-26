@@ -307,12 +307,6 @@ body.theme-light .header {
   overflow: hidden;
 }
 
-body.theme-light .hero {
-  background:
-    linear-gradient(rgba(245, 245, 240, 0.68), rgba(224, 217, 184, 0.86)),
-    url("photos/hero-mariachi.jpg") center/cover no-repeat;
-}
-
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -824,7 +818,9 @@ body.theme-light .menu-stages p {
 }
 
 body.theme-light .hero {
-  background: linear-gradient(135deg, #f5f5f0 0%, #ebe8d8 50%, #e0d9b8 100%);
+  background:
+    linear-gradient(rgba(245, 245, 240, 0.55), rgba(224, 217, 184, 0.72)),
+    url("photos/hero-mariachi.jpg") center/cover no-repeat;
 }
 
 body.theme-light .hero h1 {
