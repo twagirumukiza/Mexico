@@ -1465,3 +1465,70 @@ body.theme-light .poster-badge { background: rgba(255, 255, 255, 0.92); color: #
   .t3-compass { bottom: auto; top: 12px; right: 66px; transform: scale(0.85); transform-origin: top right; }
 }
 @media (prefers-reduced-motion: reduce) { .t3.open, .t3-card.show, .t3-pin.on .dot::after { animation: none; } }
+
+
+/* --- Lien vers Prague (ajout minimal) --- */
+.prague-cta {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(247,201,72,.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+.prague-cta-text {
+  max-width: 520px;
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+.prague-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .65rem;
+  padding: .85rem 1.6rem;
+  background: #fff;
+  border: 1.5px solid rgba(180, 150, 60, .35);
+  border-radius: 4px;
+  text-decoration: none;
+  color: #a0892e;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: .18em;
+  transition: background .2s ease, border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+  box-shadow: 0 2px 12px rgba(0,0,0,.06);
+}
+.prague-btn-icon { font-size: .85rem; color: #a0892e; line-height: 1; }
+.prague-btn-label { line-height: 1; }
+.prague-btn:hover,
+.prague-btn:focus-visible {
+  background: #faf8f0;
+  border-color: #a0892e;
+  color: #8a7420;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(160, 137, 46, .18);
+  outline: none;
+}
+body:not(.theme-light) .prague-btn {
+  background: rgba(255,255,255,.06);
+  border-color: rgba(247,201,72,.35);
+  color: #f7c948;
+  box-shadow: none;
+}
+body:not(.theme-light) .prague-btn-icon { color: #f7c948; }
+body:not(.theme-light) .prague-btn:hover,
+body:not(.theme-light) .prague-btn:focus-visible {
+  background: rgba(247,201,72,.12);
+  border-color: #f7c948;
+  color: #f7c948;
+}
+.menu-elsewhere a[href*="Prague"] {
+  font-weight: 600;
+  color: var(--yellow);
+}
