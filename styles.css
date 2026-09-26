@@ -1528,7 +1528,7 @@ body:not(.theme-light) .prague-btn:focus-visible {
   border-color: #f7c948;
   color: #f7c948;
 }
-.menu-elsewhere a[href*="Prague"] {
+.menu-elsewhere a[href*="PRAGUE"] {
   font-weight: 600;
   color: var(--yellow);
 }
