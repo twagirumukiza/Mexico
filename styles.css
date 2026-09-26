@@ -1472,7 +1472,7 @@ body.theme-light .poster-badge { background: rgba(255, 255, 255, 0.92); color: #
 @media (prefers-reduced-motion: reduce) { .t3.open, .t3-card.show, .t3-pin.on .dot::after { animation: none; } }
 
 
-/* --- Lien vers Prague (ajout minimal) --- */
+/* --- Lien vers Prague --- */
 .prague-cta {
   margin-top: 2.5rem;
   padding-top: 2rem;
