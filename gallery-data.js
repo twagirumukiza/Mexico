@@ -3306,6 +3306,46 @@ const GALLERIES = {
       //   alt: "",
       //   caption: { fr: '', en: '', es: '' } },
     ]
+  },
+
+  'cuisine': {
+    title: {
+      fr: 'Photos de la cuisine mexicaine',
+      en: 'Mexican cuisine photos',
+      es: 'Fotos de la cocina mexicana'
+    },
+    photos: [
+      {
+        src: 'photos/cuisine/mole.jpg',
+        thumb: 'photos/cuisine/mole.jpg',
+        alt: 'Mole poblano',
+        caption: {
+          fr: 'Mole poblano – poulet nappé d’une sauce aux piments, épices et chocolat, parsemé de sésame, servi avec riz rouge.',
+          en: 'Mole poblano – chicken in a chilli, spice and chocolate sauce, sprinkled with sesame, served with red rice.',
+          es: 'Mole poblano – pollo cubierto de salsa de chiles, especias y chocolate, espolvoreado con sésamo, servido con arroz rojo.'
+        }
+      },
+      {
+        src: 'photos/cuisine/ceviche.jpg',
+        thumb: 'photos/cuisine/ceviche.jpg',
+        alt: 'Ceviche de poisson',
+        caption: {
+          fr: 'Ceviche de poisson – mariné au citron vert, avec tomates, oignons rouges, jalapeños, avocat et coriandre.',
+          en: 'Fish ceviche – lime-marinated, with tomatoes, red onions, jalapeños, avocado and coriander.',
+          es: 'Ceviche de pescado – marinado en limón, con tomates, cebolla roja, jalapeños, aguacate y cilantro.'
+        }
+      },
+      {
+        src: 'photos/cuisine/mezcal.jpg',
+        thumb: 'photos/cuisine/mezcal.jpg',
+        alt: 'Mezcal, tequila et sotol',
+        caption: {
+          fr: 'Mezcal d’Oaxaca, tequila reposado & blanco, sotol de Chihuahua – les spiritueux du Mexique.',
+          en: 'Oaxaca mezcal, reposado & blanco tequila, Chihuahua sotol – Mexico’s spirits.',
+          es: 'Mezcal de Oaxaca, tequila reposado y blanco, sotol de Chihuahua – los destilados de México.'
+        }
+      }
+    ]
   }
 
 };
